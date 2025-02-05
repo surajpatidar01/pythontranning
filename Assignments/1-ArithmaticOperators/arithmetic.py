@@ -72,7 +72,7 @@ print("hello")
 
 
 
-#1
+'''1 Write a program to print your name, age, and course. All the details should be stored in separate variables and then print'''
 name="suraj"
 age="23"
 course="python"
@@ -82,7 +82,9 @@ print("age:",age)
 print("course:",course)
 
 print("name:",name,"age",age,"course",course)
-#2
+
+'''2 Write a program to print the name, age, and course details of three students. All the details should be stored in separate variables and then print'''
+
 name1,age,course1="ajay",21,"pytohn"
 name2,age2,course2="mayank",22,"arts"
 name3,age3,course3="suraj",23,"computer science"
@@ -90,25 +92,47 @@ name3,age3,course3="suraj",23,"computer science"
 print("student1",name1,age,course1)
 print("student2",name2,age2,course2)
 print("student3",name3,age3,course3)
+'''Write a program to sum 2 integer variable values without using a third variable'''
 
-#3
 a=10
 b=20
 
 print("sum of",a, "and",b, "is", a+b )
 
 
-#4
+'''4 Write a program to multiply 2 floating points'''
+
 num1=5.2
 num2=4.2
 
 num3=num1*num2
 print("multiplication result:",num3)
 
-#5
-a=50
-b=40
-c=0
+
+'''5 Write a program to print the ASCII Value of a character variable'''
+print (ord("*"))
+print (ord("b"))
+
+
+#10print("your name is: ",name")
+
+num=int(input("please inter number:"))
+print("your number is:",num)
+
+num2=int(input("please inter your number:"))
+print("your number is:",num2)
+
+print("sum of ",num, "and", num2 ,"is",num+num2)
+
+
+
+num1=input("please inter your number:")
+print("your number is:",num1)
+
+num2-input("please inter your  number:")
+print("your number is:",num2)
+
+print("sum of " ,num1, "and ", num2 ,"is ", num+num2, )
 
 
 
@@ -121,14 +145,4 @@ c=0
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+print("testing github commit push")
