@@ -170,7 +170,74 @@ print("*              *")
 print("*"*17)
 
 
+# arithmetic operator
+'''print("sum is :", 4 + 5)
+print("difference is :", 10 - 5)
+print("multiplication is :",  10*  5)
+print("division is :",  10 / 5)
+print("flor division is :", 15 // 2)
+print("remainder is :", 2 % 5)
+print("exponentiation is :" 4 ** 3)'''
 
+
+#assignment operators
+x = 5
+y=x
+print(x,y)
+x+=y
+print(x,y)
+x -= y
+print(x,y)
+x *= y
+print(x,y)
+
+#comparision_opreatoo"
+n1=10
+n2=20
+print(n1 == n2)
+print(n1 != n2)
+print(n1 > n2)
+print(n1 < n2)
+print(n1 >= n2)
+print(n1 <= n2)
+
+#logical_operator(and,or,not)
+exp1=2 > 3
+exp2=5 < 4
+print("exp1 and exp2 :", exp1 and exp2)
+print("exp1 and exp2 :", exp1 or exp2)
+print("not exp1  :", (exp1))
+
+#identity_operatores(is,,is_not)
+x = 5
+y = 5
+print("if x is y :", x is y )
+print("if x is not y :", x is not y )
+
+#membership_operator(in,in_not)
+fruits=("apple","banana","cherry")
+print("if banana is present in fruits :", "banana" in fruits)
+print("if mango is not present fruits :", "mango" not in  fruits)
+
+#bitwise_operaotr
+
+
+#typecasting
+
+
+
+#ascii value
+print (ord("*"))
+print (ord("b"))
+print(ord("A"))
+print(ord("D"))
+print(ord("#"))
+
+print(chr(98))
+print(chr(100))
+print(chr(103))
+print(chr(110))
+print(chr(111))
 
 
 
