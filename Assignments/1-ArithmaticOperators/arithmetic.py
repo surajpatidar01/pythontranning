@@ -1320,7 +1320,7 @@ if the builders don't have a sufficient number of blocks and cannot
 complete the next layer, they finish their work immediately.'''
 
 
-blocks = int(input("enter the block:"))
+'''blocks = int(input("enter the block:"))
 height = 0
 for counter in range (1,blocks+1):
     if blocks >= counter:
@@ -1328,7 +1328,28 @@ for counter in range (1,blocks+1):
         height += 1
     else:
         break
-print("height is ",height)
+print("height is ",height)'''
+
+
+#--------
+c0 = int(input("Enter the value of c0:"))
+if c0 <=0 :
+    print("c0 cannot be zero and less than 0 ")
+else:
+    counter = 0
+    while c0 != 1:
+        if c0 % 2 == 0:
+            c0 /=2
+        else:
+          c0 = 3*c0+1
+        print("c0",c0)
+        counter += 1
+    print("final c0:",c0, "\n steps it took:",counter)
+
+
+
+
+
 
 
 
