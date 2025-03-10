@@ -1,4 +1,6 @@
 from ctypes import pythonapi
+from os import WCONTINUED
+
 from ctypes.macholib.dyld import DEFAULT_LIBRARY_FALLBACK
 from hashlib import algorithms_available
 '''
@@ -664,9 +666,8 @@ print("hypotenuse is :",hyp)'''
 |          |
 +----------+'''
 '''print("+"+"-"*10+"+")
-print("|"+" "*10+"|\n"*5,end="")
+print(("|" + " " * 10 + "|\n")*5)
 print("+"+"-"*10+"+")'''
-
 
 '''It's time to complicate the code – let's find the largest of three numbers. Will it enlarge the code? A bit.
 We assume that the first value is the largest. Then we verify this hypothesis with the two remaining values.
@@ -841,6 +842,490 @@ for itr in word:
         continue
     word_without_vowels += itr
 print("not eaten word are:",word_without_vowels)'''
+
+'''counter = 1
+while counter < 5:
+    print("counter",counter)
+    counter +=1
+else:
+    print("else counter:", counter)
+
+
+counter = 111
+for counter in range (2,1):
+    print("counter")
+else:
+    print("else:",counter)'''
+
+
+'''Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are
+building a pyramid.
+Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. The pyramid is stacked according
+to one simple principle: each lower layer contains one block more than the layer above.
+The figure illustrates the rule used by the builders:
+Your task is to write a program which reads the number of blocks
+the builders have, and outputs the height of the pyramid that can
+be built using these blocks.
+Note: the height is measured by the number of fully completed layers –
+if the builders don't have a sufficient number of blocks and cannot
+complete the next layer, they finish their work immediately.'''
+
+
+'''blocks=int(input("Enter the number of blocks:"))
+height = 0
+used_blocks = 0
+
+while   used_blocks +(height +1) <= blocks:
+    height =  +1
+    used_blocks += height
+
+print("The height of the pyramid:", height)'''
+
+
+#Calculator   (match case)
+
+'''num1 = int(input("Enter  number 1:"))
+num2 = int(input("Enter number 2:"))
+
+operator = input("Enter operator:" )
+match operator:
+    case"+": 
+        print("sum is ", num1 + num2)
+    case"-":
+        print("Difference is ", num1 - num2 )
+    case"*":
+        print("multiplication is ", num1 * num2 )
+    case"%":
+        print("divisiom is ", num1 % num2)
+    case"/":
+        print("flot division is ", num1 / num2 )'''
+
+
+
+
+
+
+#turnery operator
+'''num = int(input("enter a number :"))
+output ="Even" if num % 2 == 0 else"Odd"
+print("output is ", output)'''
+
+
+
+'''list = [10,20,30,40,50,60]
+
+for i in list:
+        
+    print(i)'''
+
+'''fruits=["apple","banana","kiwi"]
+for i in fruits:
+    print(i)'''
+
+
+'''i = 2
+while i < 101:
+    print(i)
+    i += 2'''
+
+'''j = 0
+while j  <= 10:
+    print(j)
+    j = j+1'''
+
+'''x = 1
+while x  == 1:
+    x= x-1
+    print(x)'''
+
+'''x =  4
+y = 0
+while x >= 0:
+    x -= 1
+    y += 1
+    if x ==y:
+     continue
+else:
+    print(x,y)'''
+
+
+'''name = "Suraj"
+roll_number = 12
+number = 92.5
+is_student = True'''
+
+#print(name ,roll_number,  number ,is_student)
+#print(name ,roll_number,  number ,is_student)
+#print("my name is "  + name + "and my number is " ,number )
+#print("my number has change",number - 5.0)
+#print(name ,roll_number,  number ,is_student, sep = "-")
+
+
+'''x=10
+y="5"
+print(x+int(y))'''
+
+
+#Take the integer input and tell if it is positive or negative.
+'''number = int(input("Enter a number:"))
+if number >= 0:
+    print("The number is positive:")
+else:
+    print("The number is negative:)"'''
+
+#Take positive integer input and tell if it is even or odd.
+'''number = int(input("Enter  positive number: "))
+if number % 2 == 0:
+    print("It is even number")
+else:
+    print("It is odd number")'''
+
+
+'''IF COST PRICE AND SELLING PRICE OF AN ITEM IS INPUT THROUGH THE KEYBORD, WRITE  A PROGRAM TO DETERMIE WHETEHR THE SELLER HAS MADE PROFIT
+OR INCUURED LOSS OR NO PROFIT NO LOSS. ALSO DETERMINE HOW MUCH PROFIT HE MADE OR LOSS INCUURED'''
+
+'''cost_price = int(input("Enter the cost price:"))
+selling_price = int(input("Enter the selling price:"))
+
+if  cost_price < selling_price:
+    profit = selling_price - cost_price
+    print("We have made profit", profit)
+elif selling_price < cost_price:
+    loss = cost_price - selling_price
+    print("we have made loss", loss)
+else:
+    print("We have made no loss no profit ")'''
+
+# Take input percentage of student and print the grade according of marks:
+'''marks = int(input("Enter the marks:"))
+
+if marks > 80:
+    print("very good grade ")
+elif marks > 60:
+    print(" good grade")
+elif marks > 40:
+    print("average grade")
+
+else:
+    print("student is fail")'''
+
+# using multiple condition and , or :
+
+'''english_marks = int(input("Enter a english marks:"))
+math_marks = int(input("Enter a math marks:"))
+if english_marks > 80 and math_marks >80:
+    print(" A grade ")
+elif english_marks > 80 or math_marks >80 :
+    print(" B grade ")
+else:
+    print("C grade ")'''
+
+# Take positive integer input and tell if it is a four digit number or not.if
+'''number = int(input("Enter a number:"))
+if number >= 1000 and number <= 9999:
+    print("it is four digit number")
+else:
+    print("not a four digit number")'''
+
+# Take 3 positive integer input and print the greatest of them.
+'''n1 = int(input("Enter number 1:"))
+n2 = int(input("Enter number 2:"))
+n3 = int(input("Enter number 3:"))
+
+if n1 > n2 and n1 > n3 :
+    print(n1 , "is greatest number")
+elif n2 > n1 and n2 > n3 :
+    print(n2, " is greatest number")
+else:
+    print(n3, "is greatest number")'''
+
+# Taking nested if else statement:
+
+'''n1 = int(input("Enter number 1:"))
+n2 = int(input("Enter number 2:"))
+n3 = int(input("Enter number 3:"))
+if n1 > n2:
+    if n1 > n3:
+        print(n1, "is the greatest element:")
+    else:
+        print(n3,"is the greatest element:")
+else:
+      if n2 > n3:
+          print(n2, "is greatest element")
+      else:
+          print(n3,"is the greatest element")'''
+
+# Take a positive input and tell if it is divisible by 5 or 3 but not divisible by 15.
+
+'''num = int(input("Enter a positive number "))
+if num % 15 == 0:
+     print("number is divisible by 15")
+else:
+    if num % 3 == 0 or num % 5 == 0 :
+        print("number is not divisible by 15 but divisible by 3 or 5")
+    else:
+        print("number is neither divisible by 3 bor by 5  ")'''
+
+# calculator create by match case :
+'''num1= int(input("Enter number1 :"))
+num2= int(input("Enter number2 :"))
+
+operator = input("Enter operator")
+match operator:
+    case("+"):
+        print("sum is ",num1+num2 )
+    case("-"):
+        print("difference is ",num1 - num2)
+    case("*"):
+        print("multiplication is ",num1 * num2)
+    case("%"):
+        print("division is ", num1 % num2 )'''
+
+#Write a program to check if number is odd or even using ternary operator.
+'''num = int(input("enter a positive number :"))
+
+operator = "even" if num % 2 == 0 else "odd"
+print("operator is " , operator )'''
+
+#for loop
+#for i in  range (10,20,):
+#    print(i,"hello world")
+
+#Print element of a list using for loop.
+'''list = [10,20,30,40,50,60]
+
+for i in list:
+    print(i)'''
+
+'''fruits = ["apple", "banana", "kiwi"]
+for i in fruits:
+    print(i)'''
+
+# while loop.(its run till a condition is true )
+
+'''i = 0
+while i < 10:
+    print(i)
+    i += 1'''
+
+# while loop help print even no
+'''i = 2
+while i <= 101:
+    print(i)
+    i += 2'''
+
+#predict the output
+
+'''j = 0
+while j < 10:
+    print(j)
+    j = j + 1'''
+
+
+'''x = 1
+while x== 1:
+    x = x-1
+    print(x)'''
+
+# while loop computer buff
+'''i = 10
+while i == 20:
+    print("computer buff")#this code will not run'''
+
+
+# while loop (continue) keyword.
+
+'''x = 4
+y = 0
+while x >= 0:
+    x -= 1
+    y += 1
+if x == y:
+        continue
+else:
+    print(x,y)'''
+
+'''i = 1
+while i <= 5:
+    print(i)
+    i += 1'''
+
+# Print the multiplication table of a number n.(while loop )
+'''n = int(input("Enter a number : "))
+i = 1
+while i <= 10:
+    print(n*i)
+    i += 1'''
+
+#print the elements of the following list using  a loop:
+#[1,4,9,16,25,36,49,64,81,100]
+
+'''nums = [1,4,9,16,25,36,49,64,81,100]
+idx = 0
+while idx < len(nums):
+    print(nums[idx])
+    idx += 1'''
+
+#Search for a number x in this Tuple    (Error)--------------------------------
+#(1,4,9,16,25,36,49,64,81,100)
+'''nums = (1,4,9,16,25,36,49,64,81,100)
+x = 36
+i = 0
+while i < len(nums):
+    if (nums[i] == x):
+        print("FOUND at idx",i)
+    else:
+        print("finding.... ")
+        i += 1'''
+
+
+
+#cost_price and selling_price calculation
+'''cost_price = int(input("Enter a cost price:"))
+selling_price= int(input("Enter a selling price:"))
+
+if selling_price > cost_price:
+    profit = selling_price - cost_price
+    print("we have made profit", profit)
+elif cost_price > selling_price:
+    loss = cost_price - selling_price
+    print("we have made loss inccured")
+else:
+    print("we have made no loss no profit")'''
+
+# Take positive integer input and tell if it is a four digit number or not.
+'''number = int(input("Enter a positive number:"))
+if number >= 1000 and number <= 9999 :
+    print("it is four digit number :")
+else:
+    print("not a four digit number ")'''
+
+# Take the 3 positive integer and tell the greatest of them .
+'''n1 = int(input("enter a number1 :"))
+n2 = int(input("enter a number 2 :"))
+n3 = int(input("enter a number 3 :"))
+
+if n1 > n2 and n1 > n3:
+    print(n1 ,"is greatest number ")
+elif n2 > n1 and n2 > n3:
+    print(n2,"is greatest number")
+else:
+    print(n3,"is greatest number")'''
+
+
+# Take the 3 positive integer and tell the greatest of them .(usig nested if else ; statement
+
+'''n1 = int(input("enter a number1 :"))
+n2 = int(input("enter a number 2 :"))
+n3 = int(input("enter a number 3 :"))
+
+#comparision n1 and n2
+if n1 > n2:
+    #either n1 or n3 is greatest:
+    if n1 > n3:
+        print(n1, "is the greatest element")
+    else:
+        print(n3, "is the greatest element")
+else:
+    #either n2 or n3 is greatest
+    if n2 > n3:
+        print(n2, "is hte greatest element")
+    else:
+        print(n3, "is greatest element")'''
+
+
+# print the pattern given (*****),
+'''n = int(input("enter n:"))
+for _ in range (n):
+    print("*"*5)'''
+
+#print the pattern (1234), (123456)
+
+'''n = int(input("Enter n:"))
+
+for i in range (n):
+    for j in range(1,n+1):
+        print(j,end = "")
+    print()'''
+
+#print the pattern  (1), (12), (123), (1234)
+'''n = int(input("Enter n:"))
+
+for i in range (1,n+1):
+    for j in range (1,i+1):
+        print(j,end = "")
+    print()'''
+
+# for pattern question :(*****)
+'''n = int(input("Enter n:"))
+for i in range (n):
+    print("*"*5)'''
+
+#for pattern question(1234,123456)
+'''n = int(input("Enter n:")) # user input
+
+for i in range(n): #loop for rows
+
+    for j in range (1,n+1): #loop for columns
+        print(j,end="")
+    print()'''
+
+# print the given pattern (for n = 4)(1,12,123,1234,)
+'''n = int(input("Enter n:"))
+
+for i in range(1,n+1):
+
+    for j in range (1,i+1):
+        print(j,end = "")
+    print()'''
+
+
+
+#print the given pattern.(for n = 4).(A,AB,ABC,ABCD)
+
+'''n = int(input("enter n :")) #user input
+
+for i in range (1,n+1): # loop for rows
+    
+    for j in range(i): #loop for columns.
+        
+        print(chr(65),end="")
+    print()'''
+
+
+# print the given pattern (1,123,1234,12345,123456,1234567,)
+
+'''n = int(input("Enter n: "))  # User input for number of rows
+
+for i in range(1, n + 1):  # Loop for rows
+    # Printing spaces to center the pattern
+    print(" " * (n - i), end="")
+    # Printing numbers
+    for j in range(1, 2 * i):
+        print(j, end="")
+    print()  # Move to the next line'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
