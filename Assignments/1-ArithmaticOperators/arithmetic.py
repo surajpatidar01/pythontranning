@@ -1166,7 +1166,7 @@ while idx < len(nums):
     print(nums[idx])
     idx += 1'''
 
-#Search for a number x in this Tuple    (Error)--------------------------------
+#Search for a number x in this Tuple    (Error)------------
 #(1,4,9,16,25,36,49,64,81,100)
 '''nums = (1,4,9,16,25,36,49,64,81,100)
 x = 36
@@ -1189,7 +1189,7 @@ if selling_price > cost_price:
     print("we have made profit", profit)
 elif cost_price > selling_price:
     loss = cost_price - selling_price
-    print("we have made loss inccured")
+    print("we have made loss inncured")
 else:
     print("we have made no loss no profit")'''
 
@@ -1213,7 +1213,7 @@ else:
     print(n3,"is greatest number")'''
 
 
-# Take the 3 positive integer and tell the greatest of them .(usig nested if else ; statement
+# Take the 3 positive integer and tell the greatest of them .(using nested if else ; statement
 
 '''n1 = int(input("enter a number1 :"))
 n2 = int(input("enter a number 2 :"))
@@ -1305,6 +1305,30 @@ for i in range(1, n + 1):  # Loop for rows
         print(j, end="")
     print()  # Move to the next line'''
 
+
+#pyramid (for loop )
+'''Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are
+building a pyramid.
+Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. The pyramid is stacked according
+to one simple principle: each lower layer contains one block more than the layer above.
+The figure illustrates the rule used by the builders:
+Your task is to write a program which reads the number of blocksgit
+the builders have, and outputs the height of the pyramid that can
+be built using these blocks.
+Note: the height is measured by the number of fully completed layers –
+if the builders don't have a sufficient number of blocks and cannot
+complete the next layer, they finish their work immediately.'''
+
+
+blocks = int(input("enter the block:"))
+height = 0
+for counter in range (1,blocks+1):
+    if blocks >= counter:
+        blocks -= counter
+        height += 1
+    else:
+        break
+print("height is ",height)
 
 
 
