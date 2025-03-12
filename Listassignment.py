@@ -8,9 +8,9 @@ print(numbers)
 
 #Q2--write a line of code that removes the last element from the list (Step 2)
 
-'''numbers = [1,2,3,4,5]
+numbers = [1,2,3,4,5]
 del numbers[-1]
-print(numbers)'''
+print(numbers)
 
 
 #Q3--write a line of code that prints the length of the existing list (Step 3).
