@@ -1307,67 +1307,251 @@ for i in range(1, n + 1):  # Loop for rows
 
 
 #pyramid (for loop )
-'''Listen to this story: a boy and his father, a computer programmer, are playing with wooden blocks. They are
-building a pyramid.
-Their pyramid is a bit weird, as it is actually a pyramid-shaped wall – it's flat. The pyramid is stacked according
-to one simple principle: each lower layer contains one block more than the layer above.
-The figure illustrates the rule used by the builders:
-Your task is to write a program which reads the number of blocksgit
-the builders have, and outputs the height of the pyramid that can
-be built using these blocks.
-Note: the height is measured by the number of fully completed layers –
-if the builders don't have a sufficient number of blocks and cannot
-complete the next layer, they finish their work immediately.'''
+'''In 1937, a German mathematician named Lothar Collatz formulated an intriguing hypothesis (it still remains
+unproven) which can be described in the following way:
+1. take any non-negative and non-zero integer number and name it c0;
+2. if it's even, evaluate a new c0 as c0 ÷ 2;
+3. otherwise, if it's odd, evaluate a new c0 as 3 × c0 + 1;
+4. if c0 ≠ 1, go back to point 2.
+The hypothesis says that regardless of the initial value of c0, it will always go to 1.
+Of course, it's an extremely complex task to use a computer in order to prove the hypothesis for any natural
+number (it may even require artificial intelligence), but you can use Python to check some individual numbers.
+Maybe you'll even find the one which would disprove the hypothesis.
+Write a program which reads one natural number and executes the above steps as long as c0 remains different
+from 1. We also want you to count the steps needed to achieve the goal. Your code should output all the
+intermediate values of c0, too.
+Hint: the most important part of the problem is how to transform Collatz's idea into a while loop – this is the
+key to success.'''
 
+'''c0 = int(input("Enter the value of c0: "))
 
-'''blocks = int(input("enter the block:"))
-height = 0
-for counter in range (1,blocks+1):
-    if blocks >= counter:
-        blocks -= counter
-        height += 1
-    else:
-        break
-print("height is ",height)'''
-
-
-#--------
-c0 = int(input("Enter the value of c0:"))
-if c0 <=0 :
-    print("c0 cannot be zero and less than 0 ")
+if c0 <= 0:
+    print("c0 cannot be zero or negative. Please enter a positive integer.")
 else:
     counter = 0
     while c0 != 1:
         if c0 % 2 == 0:
-            c0 /=2
+            c0 //= 2  # Integer division
         else:
-          c0 = 3*c0+1
-        print("c0",c0)
+            c0 = 3 * c0 + 1
+        print("c0 =", c0)
         counter += 1
-    print("final c0:",c0, "\n steps it took:",counter)
+
+    print("Final c0:", c0, "\nSteps it took:", counter)'''
+
+# use  while loop(number validetion 1,100)
+'''x = 0
+while not(1<=x<=100):
+    x=int(input("please inter a number of 1tp 100"))
+print("vaild of ",x)'''
+
+# for loop(number validetion 1,100)
+'''for i in range(100):
+    x = int(input("enter a number of 1 to 100:"))
+    if 1 <= x <= 100:
+        print("valid number ",x)
+        break
+    print("enter a valid number ")'''
+
+#for i in range(10):
+#print("*"*10)
+
+'''i = 0
+while i <= 50:
+    print("*"*10)
+    i += 1'''
+
+
+'''for i in range(1,51,):
+    if i % 2 ==0:
+        print("t")
+    else:
+        print(i)'''
+
+'''for i in range(1,51,):
+    if i % 3 == 0:
+        print("t")
+    else:
+        print(i)'''
+
+'''for i in range(1,51):
+    if i % 3 == 0:
+        print("fiz")
+    if i % 5 == 0:
+        print("buzz")
+    if i % 3 == 0 and i % 5 == 0:
+  
+        print(i)'''
+
+
+
+# print(1,2,3,4,5,6,7,8,9..........50)(using while loop )
+'''n = 1
+while  n <= 50:
+    if n % 3 == 0:
+        print("fizz")
+    if n % 5 ==0:
+        print("buzz")
+    if n % 3 ==0 and n % 5 == 0:
+        print("fizzbuzz")
+        n += 1'''
+
+
+'''
+1
+1 2
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 '''
+
+'''r = 6
+for i in range(1,r+1):
+    for j in range(1,i):
+        print(j,end=" ")
+    print()'''
+
+'''
+5 4 3 2 1 
+4 3 2 1 
+3 2 1 
+2 1 
+1 '''
+
+'''r = 6
+for i in range(r,0,-1):
+    for j in range(1,i):
+        print(j,end = "")
+    print()'''
 
 
 
 
 
 
+'''
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+'''
+
+'''n = 5
+for i in range(n):
+    print(" " * (n-i-1) + "* " *(i+1))'''
+
+#(******) user input lena hai or y print krna h
+'''n = int(input("Enter a number of rows:"))
+
+for i in range(n):
+    print("*"*5)'''
+
+
+'''n = int(input("enter a number of rows:"))
+for i in range(n):
+    for j in range(1,n+1):
+        print(j,end = "")
+    print()
+
+'''
+
+# list
+#list1 = [20,5.5,"hello"]
+#list1[2]="good"
+#print(list1)
+
+# asendng print list
+'''list = [1,5,6,4,3,2,]
+print(list.sort())
+print(list)
+
+# decending print list
+list = [1,5,6,4,3,2,]
+print(list.sort(reverse = True))
+print(list)'''
 
 
 
+#Q1 Write a program to print the first 10 natural numbers using for loop.
+#for i in range(1,11):
+#   print(i)
+
+#Q2 Write a program to print all the even numbers within the range of 10
+
+'''for i in range(1,10):
+    if  i % 2 == 0:
+        print(i)'''
+
+#Q3 Write a program to calculate the sum of all numbers from 1 to a given number - 15.
+
+
+'''n = 15
+
+sum_n = 0
+for i in range(1, n + 1):
+    sum_n += i
+print("Sum of numbers from 1 to", n, "is:", sum_n)'''
+
+#Q4 Write a program to calculate the sum of all the odd numbers within the given range of 15.
+
+'''for i in range(1,15):
+    if i % 3 == 0:
+        print(i)'''
+
+
+#Q5 Write a program to print a multiplication table of a given number 15.
+'''n = 15
+for i in range(n*1):
+    print(i)
+    i += 1'''####wrong....
 
 
 
+# list
+'''numbers = [10,5,7,2,1,]
+print(numbers)
+
+numbers = [10,5,7,2,1,]
+print(numbers[0])
+
+numbers = [10,5,7,2,1,]
+print(numbers[1])
 
 
+numbers = [10,5,7,2,1,]
+print(numbers[2])
 
+numbers = [10,5,7,2,1,]
+print(numbers[3])'''
 
+#numbers = [10,5,7,2,1,]
+#numbers[0] = 111
+#print("new list contains",numbers)
 
+'''numbers = [10,5,7,2,1,]
+numbers[1] = numbers[4]
+print("new list contains",numbers)'''
 
+# use len()
+#numbers = [10,5,7,2,1,1,2,3,]
+#print(len(numbers))
 
+#delete
+'''numbers = [10,5,7,2,1,]
+del numbers[1]
+print(len(numbers))
+print(numbers)'''
 
+#[-1]
+'''numbers = [10,5,7,2,1,]
+print(numbers[-1])'''
 
+# middle number
 
-
+numbers = [1,2,3,4,5]
+var = int(input("enter n:"))
+numbers [ len(numbers) // 2] = var
+print(numbers)
 
 
 
