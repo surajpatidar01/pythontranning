@@ -1546,15 +1546,5 @@ print(numbers)'''
 '''numbers = [10,5,7,2,1,]
 print(numbers[-1])'''
 
+
 # middle number
-
-numbers = [1,2,3,4,5]
-var = int(input("enter n:"))
-numbers [ len(numbers) // 2] = var
-print(numbers)
-
-
-
-
-
-
