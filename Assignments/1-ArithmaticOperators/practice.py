@@ -1547,4 +1547,78 @@ print(numbers)'''
 print(numbers[-1])'''
 
 
-# middle number
+#(*****)
+'''n = int(input("Enter a number n:"))
+for i in range(n):
+    print("*"*5,end = "")
+    print()'''
+
+'''n = int(input("Enter a number n:"))
+for i in range(1,n+1):
+    for  j in range(i):
+        print("* " ,end = "")
+    print()'''
+
+'''n = int(input("Enter a number n:"))
+for i in range(n,0,-1):
+
+    for j in range(i):
+        print("*",end = "")
+    print()'''
+
+'''num = 6
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end = " ")
+    print()'''
+
+'''rows = 6
+for i in range(rows,0,-1):
+    for j in range(i,0,-1):
+        print(j,end = " ")
+    print()'''
+
+
+
+
+
+
+
+#Q1--Write a program to print the first 10 natural numbers using for loop.
+'''for i in range(1,11):
+    print(i)'''
+
+#Q2--Write a program to print all the even numbers within the range of 10
+'''num = 10
+for i in range(num):
+    if i % 2 ==0:
+        print(i)'''
+
+
+
+#Q3--Write a program to calculate the sum of all numbers from 1 to a given number - 15
+'''n  = 15
+sum = 0
+for i in range(1,n+1):
+    sum += i
+print("sum of all numbers from 1 to a given number - 15:",sum)'''
+
+
+
+#Q4--Write a program to calculate the sum of all the odd numbers within the given range of 15
+
+n = 15
+
+
+
+
+
+
+#Q5--Write a program to print a multiplication table of a given number 15
+#Q6--Write a program to display numbers from a list using a for the loop [1,2,4,6,88,125]
+#Q7--Write a program to count the total number of digits in a number 129475
+#Q8--Write a program to check if the given string is a palindrome - madam
+#Q9--Write a program that accepts a word from the user and reverses it
+#Q10--Write a program to check if a given number is an Armstrong number 153
+
+

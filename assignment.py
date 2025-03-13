@@ -19,7 +19,9 @@ for i in range(1, n + 1):
 print("Sum of numbers from 1 to 15 is:", sum_n)'''
 
 #Q4--Write a program to calculate the sum of all the odd numbers within the given range of 15.
-'''sum_odds = 0
+
+'''num = 15
+sum_odds = 0
 
 for num in range(1, 16):
     if num % 2 != 0:
@@ -62,6 +64,5 @@ print("",reversed_word)'''
 
 
 #Q10--Write a program to check if a given number is an Armstrong number 153.'
-
 
 
