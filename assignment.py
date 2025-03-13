@@ -25,7 +25,7 @@ for num in range(1, 16):
     if num % 2 != 0:
         sum_odds += num
 
-print("su of 1 to 15 odd num is", sum_odds)'''
+print("sum of 1 to 15 odd num is", sum_odds)'''
 
 #Q5--Write a program to print a multiplication table of a given number 15.
 
