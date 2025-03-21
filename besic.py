@@ -1,4 +1,4 @@
-print("hello")
+'''print("hello")
 
 print("11111111")
 
@@ -15,7 +15,7 @@ print("h\ne\nl\nl\no")
 
 
 #print("suraj how you")
-'''print("everything is okay")'''
+print("everything is okay")
 
 
 print("suraj")
@@ -171,13 +171,13 @@ print("*"*17)
 
 
 # arithmetic operator
-'''print("sum is :", 4 + 5)
+print("sum is :", 4 + 5)
 print("difference is :", 10 - 5)
 print("multiplication is :",  10*  5)
 print("division is :",  10 / 5)
 print("flor division is :", 15 // 2)
 print("remainder is :", 2 % 5)
-print("exponentiation is :" 4 ** 3)'''
+print("exponentiation is :" 4 ** 3)
 
 
 #assignment operators
@@ -237,9 +237,94 @@ print(chr(98))
 print(chr(100))
 print(chr(103))
 print(chr(110))
-print(chr(111))
+print(chr(111))'''
+
+
+'''n = int(input("Enetr a numbe rof n:"))
+for i in range(1,n):
+    for j in range(1,n+1):
+        print(j,end = "")
+    print()
+'''
 
 
 
+'''n = int(input("Enter a number rof n:"))
+for i in range(n):
+    for j in range(1,i+1):
+        print(j,end = "")
+    print()'''
+
+
+
+'''list = [1,2,3,4,5]
+list.insert(2,7)
+print("updated list after insert",list)'''
+
+
+'''list = [1,2,3,4,5]
+list.inse,7)
+print("updated list after insert",list)'''
+
+'''list=[]
+for count in range (10):
+    list.append(count +1)
+print(list)'''
+
+
+'''my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for count in range(len(my_list)):
+    my_list[count] += 1
+print(my_list)
+'''
+
+'''my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for count in range(len(my_list , )):
+    my_list[count] += 1
+print(my_list)
+'''
+
+'''my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+sum = 0
+for count in range(len(my_list)):
+    sum = sum + my_list[count]
+    print(sum)'''
+
+
+
+
+'''n = int(input("enter n:"))
+for i in range(n+1):
+    for j in range(1,i+1):
+        print(j,end = " ")
+    print()'''
+
+
+
+
+
+'''print("*" * 17)  # Top border
+for i in range(1,10):
+    print("*"+" "*15+"*")
+print("*" * 17)  # Bottom border'''
+
+'''n = int(input("enter a n:"))
+for i in range(1,n+1):
+    print(" "*(n-i),end ="")
+    for j in range(1,2*i):
+        print(j,end = "")
+    print()'''
+
+
+# List(mutable)
+fruits = ["Apple","banana","cherry","Kiwi"]
+fruits[0] = 1
+print(fruits)              # print a list
+
+#print(type(fruits))       #cheak type of list
+
+#print(len(fruits))         #  how to cheak lenth of  list
+
+# checking if item is present  in a list.
 
 

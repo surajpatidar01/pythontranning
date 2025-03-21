@@ -1,7 +1,7 @@
 from ctypes import pythonapi
 from os import WCONTINUED
 
-from ctypes.macholib.dyld import DEFAULT_LIBRARY_FALLBACK
+#from ctypes.macholib.dyld import DEFAULT_LIBRARY_FALLBACK
 from hashlib import algorithms_available
 '''
 a=40
@@ -369,16 +369,16 @@ inputted string is "Spathiphyllum" (upper-case)
 (lower-case)
 ● prints "Spathiphyllum! Not [input]!" otherwise. Note: [input] is the string taken as input.'''
 
-
-
-
-'''a=input(" please inter plant name:  ")
-if a == "Spathyphillum":
-    print("yes,spathyphillum is best plant:")
-elif a=="spathyphillum":
-    print("no ,i want a big spathyphillum:")
+'''plant = input("please enter plane name:")
+if plant == "Spathiphyllum":
+    print("Yes - Spathiphyllum is the best plant ever!")
+elif plant == "Spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
 else:
-    print("no! spathyphillum,not" ,a)'''
+    print("Spathiphyllum! Not [plant]!")'''
+
+
+
 
 
 
@@ -685,8 +685,8 @@ if number2 > largest_number:
 
 if number3 > largest_number:
    largest_number = number3
-else:
-    print("the largest_number is ",largest_number)'''
+
+print("the largest_number is ",largest_number)'''
 
     
 '''Your code correctly finds and prints both the largest and smallest numbers among the three user inputs. It is clean and efficient'''
@@ -709,7 +709,6 @@ inputted string is "Spathiphyllum" (upper-case)
 ● prints "No, I want a big Spathiphyllum!" if the inputted string is "spathiphyllum"
 (lower-case)
 ● prints "Spathiphyllum! Not [input]!" otherwise. Note: [input] is the string taken as input.'''
-
 '''plant=input("pleae enter plant name:")
 if plant=="Spathiphyllum":
     print("Yes - Spathiphyllum is the best plant ever!")
@@ -1597,28 +1596,218 @@ for i in range(num):
 
 
 #Q3--Write a program to calculate the sum of all numbers from 1 to a given number - 15
-'''n  = 15
-sum = 0
-for i in range(1,n+1):
-    sum += i
-print("sum of all numbers from 1 to a given number - 15:",sum)'''
 
+'''n= 15
+num = 0
+for i in range(1,n +1):
+    sum += i
+print("sum of all numbers from 1 to a given number - 15",sum)'''
 
 
 #Q4--Write a program to calculate the sum of all the odd numbers within the given range of 15
 
-n = 15
-
-
-
-
+'''n = 15
+sum_odd = 0
+for i in range(1,16):
+    if n % 2 != 0:
+        sum_odd += n
+print("sum of all the odd numbers within the given range of 15:",sum_odd)'''
 
 
 #Q5--Write a program to print a multiplication table of a given number 15
+
+'''n = 15
+for i in range(1,15):
+    print(n * i)'''
+
 #Q6--Write a program to display numbers from a list using a for the loop [1,2,4,6,88,125]
+'''numbers = [1,2,4,6,88,125]
+for i in list (numbers):
+    print(i)'''
+
+
 #Q7--Write a program to count the total number of digits in a number 129475
-#Q8--Write a program to check if the given string is a palindrome - madam
-#Q9--Write a program that accepts a word from the user and reverses it
-#Q10--Write a program to check if a given number is an Armstrong number 153
+'''number = 129475
+
+print(len(str(number)))'''
+
+
+#Q7--Write a program to check if the given string is a palindrome - madam
+
+
+#Ek program likhe jo kisi bhi do numbers (a aur b) ka input le aur unka hypotenuse calculate kare, jisme:
+'''a = int(input("Enter a first side:"))
+b = int(input("Enter a second side:"))
+hypo = ((a**2+b**2)**0.5)
+print("hypothesis is  ",hypo)'''
+
+
+# factorial num.
+'''n = int(input("Enter num n:"))
+fact = 1
+
+for i in range(1,n+1):
+    fact *= i
+print("Factorial num is",fact)
+'''
+#factorial num.(120)
+'''n = 10
+fact = 1
+for i in range(1,11):
+    fact *= i
+print("factorial num is",fact)'''
+
+
+# fibonacci series.
+'''n = int(input("Enter n:"))
+a = 0
+b = 1
+if n ==1:
+    print(a)
+else:
+    for i in range(1,n+1):
+        c = a+b
+        a = b
+        b = c
+        print(c)'''
+
+
+
+# armstrong number().
+
+'''
+num = int(input("Enter a number: "))  
+sum = 0  
+temp = num  
+power = len(str(num)) 
+
+while temp > 0:  
+    digit = temp % 10  
+    sum += digit ** power  
+    temp //= 10  
+
+if num == sum:  
+    print(num, "is an Armstrong number")  
+else:  
+    print(num, "is not an Armstrong number")  '''
+
+
+# even 0dd .
+'''n = int(input("enter number n:"))
+if n % 2== 0:
+    print("Even number")
+else:
+    print("Odd number")'''
+
+
+'''for i in range(1,10):
+    if i % 2 != 0:
+        print(i)'''
+
+
+#palindrome:
+'''word = input("Enter word:")
+reverse = ""
+for char in word:
+ reverse = char + reverse
+if reverse == word:
+    print("Yes, its a palindrome string")
+
+else:
+    print("Not, a palindrome string")'''
+
+
+
+# print(1234,12345,123456)
+'''n = int(input("Enter a number of n:"))
+for i in range(n):
+    for j in range(1,n+1):
+        print(j,end = "")
+    print()'''
+
+# using if statement.
+'''age = int(input("Enter age :"))
+
+if age > 18:
+    print("You are capable for licence")
+print ("Ypu are not capable for licence")'''
+
+# if else (statement)
+'''age = int(input("Enter age:"))
+if age >= 18:
+    print("You are capable for licence")
+else:
+   print ("You are not capable for licence")'''
+
+# if... elif....else:(statement)
+'''handsome = True
+Good_salary = True
+
+if handsome == "True" and  Good_salary == "True":
+    print("You will merry with super model:")
+elif handsome != "True" and  Good_salary == "True":
+    print("you will merry with beauty full girl")
+elif handsome == "True" and  Good_salary != "True":
+    print("You will merry with a girl")
+else:
+    print("depends of god!")'''
+
+#nested if .
+'''age = int(input("Enter age:"))
+own_car = True
+if age > 18:
+
+    if own_car == True:
+        print("Drive your car")
+    else:
+        print("Work hard & buy a new car")
+else:
+    print("firstly bde to ho jao")'''
+
+
+#pyramid.
+'''blocks = int(input("Enter a number of blocks:"))
+height = 0
+layer = 0
+while blocks >= layer:
+    blocks -= layer
+    height += 1
+    layer += 1
+print("The height of is",height)'''
+
+
+
+'''numbers = [1,2,3,4,5,6,7,8,9,10]
+for i in numbers:
+    print(i)'''
+
+'''num = []
+for i in range(10):
+    print(i)
+    num[i] = i+1'''
+
+'''num = [10,20,30,40,50,60,70,80,90,100]
+for i in range(len(num)):
+    num[i] = num[i] + 1
+print(num)'''
+
+
+
+'''Write a program to calculate the sum of all the elements in the list:
+list=> my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]'''
+'''my_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+total_sum = 0
+for i in my_list:
+    total_sum += i
+print("Sun of all elements:",total_sum)'''
+
+
+
+
+
+
+
+
+
 
 

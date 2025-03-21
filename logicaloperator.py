@@ -15,7 +15,6 @@ cookies = int(input("Enter the  of cookies  purchase:"))
 print(cake >= 10  or  cookies >= 10)
 
 #NOT    (operator)
-
 cake = int(input("Enter the number of cake purchase:"))
 cookies = int(input("Enter the  of cookies  purchase:"))
 print(not (cake >= 10  or  cookies >= 10))'''

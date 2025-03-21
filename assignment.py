@@ -48,14 +48,18 @@ for i in num:
 count = len(str(num))
 print(count)'''
 
-#Q8--Write a program to check if the given string is a palindrome - madam
+#Q8--Write a program to check if the given string is a palindrome - madam(user input)
 
-'''n = "madam"
-
-if n == n[::-1]:
-    print("its palindrome")
+'''name = input("Enter a name:")
+reverse=""
+for char in name:
+    reverse = char  + reverse
+if name == reverse :
+    print("Yes , string is palindrome")
 else:
-    print("its not palindrome")'''
+    print("No, string is not palindrome")'''
+
+
 
 #Q9--Write a program that accepts a word from the user and reverses it.
 '''word= input("enter n:")
@@ -64,5 +68,6 @@ print("",reversed_word)'''
 
 
 #Q10--Write a program to check if a given number is an Armstrong number 153.'
+
 
 
