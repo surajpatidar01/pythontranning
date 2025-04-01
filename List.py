@@ -7,7 +7,7 @@ fruits = ["Apple","banana","cherry","Kiwi"]
 
 #print(len(fruits))         #  how to cheak lenth of  list
 
-#----checking if item is present  in a list.
+#---checking if item is present  in a list.
 '''if "banana" in  fruits:
     print("banana  is part of list:")
 '''
@@ -93,7 +93,7 @@ fruits = ["Apple","banana","cherry","Kiwi"]
 new_fruits = fruits.copy()
 print(new_fruits)'''
 
-#----concetinate 2 list.
+#----Concatenate 2 list.
 '''fruits = ["apple","banana","cherry","mango","kiwi"]
 new_fruits = ["grapes","papaya","watermelon"]
 
@@ -109,7 +109,11 @@ print(n)'''
 '''numbers = [10,40,60,90,20,30,50,70]
 for i in numbers:
     print(i)'''
-
-
-
+#--lARGE NUMBER
+'''num = [1,2,3,4,5,6,7,77]
+large = 0
+for i in num:
+    if i > large:
+        large = i
+print("lagrest number is :",large)'''
 

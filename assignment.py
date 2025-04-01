@@ -71,3 +71,80 @@ print("",reversed_word)'''
 
 
 
+
+
+#list assignment;
+'''Q1Write a Python program to sum all the items in a list'''
+
+'''num = [1,2,3,4,5,6,7,8,9,10]
+sum = 0
+for i in num:
+    sum += i
+print(sum)'''
+
+'''Q2-Write a Python program to multiply all the items in a list'''
+
+'''num = [1,2,3,4]
+multiplication = 1
+for i in num:
+    multiplication *= i
+print("multiplication of all iten of list is",multiplication)'''
+
+'''Q 3 Write a Python program to get the largest number from a list'''
+
+'''num = [20,10,40,66,1,77,100,120,2100,40,20,42]
+largest_number  = 0
+for i in num:
+    if i > largest_number:
+        largest_number = i
+print("largest number is",largest_number)'''
+
+'''Q4-Write a Python program to get the smallest number from a list'''
+
+'''num = [20,10,40,66,1,77,100,120,2100,40,20,42]
+smallest_number = num[0]
+for i in num:
+    if i < smallest_number:
+        smallest_number = i
+print("smallest number is ",smallest_number)'''
+
+
+
+'''Q5 - Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2'''
+
+sample_list = ['abc', 'xyz', 'aba', '1221']
+
+
+'''Q6-Write a Python program to remove duplicates from a list.'''
+number = [1,2,8,0,3,6,5,1,2]
+print(number)
+
+
+
+
+'''Q7-Write a Python program to check if a list is empty or not.'''
+
+
+
+
+'''Q 8-Write a Python program to clone or copy a list.'''
+
+'''list = [1,2,3,4,5,6,7,8,9]
+print(list)
+copy_list = list[:]
+print(copy_list)
+'''
+
+
+'''Q 9-Write a Python program to find the list of words that are longer than n from a given list of words.'''
+
+
+'''Q10-Write a Python function that takes two lists and returns True if they have at least one common member.'''
+
+
+
+
+
+
+
+

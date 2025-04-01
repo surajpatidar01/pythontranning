@@ -1,7 +1,5 @@
 #  basic calculator create by (match case):
 
-
-
 '''num1= int(input("Enter number1 :"))
 num2= int(input("Enter number2 :"))
 

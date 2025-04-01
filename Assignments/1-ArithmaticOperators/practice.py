@@ -1338,13 +1338,13 @@ else:
 
     print("Final c0:", c0, "\nSteps it took:", counter)'''
 
-# use  while loop(number validetion 1,100)
+# use  while loop(number validation 1,100)
 '''x = 0
 while not(1<=x<=100):
-    x=int(input("please inter a number of 1tp 100"))
-print("vaild of ",x)'''
+    x=int(input("please inter a number of 1 to 100"))
+print("valid of ",x)'''
 
-# for loop(number validetion 1,100)
+# for loop(number validation 1,100)
 '''for i in range(100):
     x = int(input("enter a number of 1 to 100:"))
     if 1 <= x <= 100:
@@ -1800,6 +1800,753 @@ total_sum = 0
 for i in my_list:
     total_sum += i
 print("Sun of all elements:",total_sum)'''
+
+#Q1--sum of list all elements
+'''numbers  = [10,20,30,40,50,60,70,80,90,100]
+total_sum = sum(numbers)
+print("the sum of all elements in a list",total_sum)'''
+
+
+
+#Q6--find the max numbers in a list
+'''numbers  = [10,20,30,40,50,60,70,80,90,100]
+max_numbers = max(numbers)
+print(max_numbers)'''
+
+#Q7--find the min numbers in a list
+'''numbers  = [10,20,30,40,50,60,70,80,90,100]
+min_numbers = min(numbers)
+print(min_numbers)'''
+
+#Q8--reverse a list
+'''numbers  = [10,20,30,40,50,60,70,80,90,100]
+numbers.sort(reverse = True)
+print(numbers)'''
+
+#Q9--insert number in a list
+'''numbers  = [10,20,30,40,50,60,70,80,90,100]
+numbers.insert(1,5000)
+print(numbers)'''
+
+#Q10--remove elements in a list
+'''my_list = [11, 21, 31, 41, 51, 61, 71, 81, 91, 101]
+ 
+my_list.remove(21)
+print(my_list)'''
+
+
+#Q4--- program to blank list update.
+'''numbers = []
+for i in range(1,11):
+    numbers.append(i)
+print(numbers)'''
+
+#Q sum list elements.
+'''numbers = [1,2,3,4,5,6,7,8,9,10]
+numbers = sum(numbers)
+print(numbers)'''
+
+
+'''num1 = 1
+num2 = 10
+print("value of num1 and num2",num1,num2)
+
+num3 = 0
+
+num3 = num1
+num1 = num2
+num2 = num3
+
+num1,num2 = num2,num1
+print("After swapping")
+print("value of num1 and num2",num1,num2)'''
+
+'''numbers = [10,1,8,3,5]
+numbers[0],numbers[4] = numbers[4],numbers[0]
+numbers[1],numbers[3] = numbers[3],numbers[1]
+print(numbers)'''
+
+
+'''beatles = []
+print(beatles)
+beatles.append("john Lennon" )
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+
+print(beatles)
+for i in range(1,3):
+    name = input("Enter name of members ") #Stu Suteliffe, Pete Best
+    beatles.append(name)
+print(beatles)
+
+del beatles[3:5]
+print(beatles)
+beatles.insert(0,"Ringo Starr")
+print(beatles)'''
+
+'''numbers = [10,20,30,40,50]
+print(numbers)
+print(numbers[0])
+print(numbers[1])
+print(numbers[2])
+print(numbers[3])
+print(numbers[4])'''
+
+
+'''numbers = [10,20,30,40,50]
+count = 0
+print(numbers[count])
+count += 1
+print(numbers[count])
+count += 1
+print(numbers[count])
+count += 1
+print(numbers[count])
+count += 1
+print(numbers[count])
+
+
+numbers = [10,20,30,40,50]
+numbers[0] = 111
+print(numbers)
+
+
+numbers = [10,20,30,40,50]
+numbers[1] = numbers[4]
+
+print(numbers)'''
+
+'''numbers = [10,20,30,40,50]
+del numbers
+print(numbers)'''
+
+
+'''numbers = [1,2,3,4,5]
+print(len(numbers))
+del numbers[-1]
+print(numbers)
+
+numbers = [10,20,30,40,50]
+del numbers[len(numbers)-1]'''
+
+
+'''numbers = [10,20,30,40,50]
+n = int(input("enter n:"))
+numbers[len(numbers) // 2] = n
+print(numbers)'''
+
+
+'''list = [10,1,8,3,5]
+#for traversing list
+for count in range(len(list)):
+    #print("index:",count)
+    #print("element",list[count])
+    print("list[",count,"] => ",list[count])'''
+
+
+
+'''list = [10,1,8,3,5]
+for element in list:
+    print("element => ",element)'''
+
+
+'''num1 = 5
+num2 = 10
+print(num1)
+print(num2)
+
+num3 = num1
+num1 = num2
+num2 = num3
+print(num1)
+print(num2)'''
+
+'''num1 = 5
+num2 = 10
+print(num1,num2)
+
+num1,num2 = num2,num1
+print(num1,num2)'''
+
+
+'''numbers = [10,1,8,3,5]
+print(numbers)
+numbers[0],numbers[4] = numbers[4],numbers[0]
+print(numbers)
+
+numbers[1],numbers[3] = numbers[3],numbers[1]
+
+print(numbers)'''
+
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and Geroge harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete best:
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
+ '''
+
+
+'''beatles = []
+print(beatles)
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("Geroge harrison")
+print(beatles)
+
+for i in range(1,2):
+    beatles.append("Stu Sutcliffe")
+    beatles.append("Pete best")
+print(beatles)
+
+del beatles[3]
+del beatles[3]
+print(beatles)
+
+beatles.insert(0,"Ringo starr")
+print(beatles)'''
+
+
+
+'''list = [1,2,3,4,5]
+list2 = []
+add = 0
+for number in list:
+    add += number
+    list2.append(add)
+print(list2)
+print(list)'''
+
+#list traversing
+
+'''You
+can
+use
+for loop to traverse a list.Can you write a program to do that?'''
+'''num = [10,20,30,40,50,60,70,80,90,100]
+
+for count in range(len(num)):
+    print(num[count])'''
+
+
+#list traversing another way.
+'''num = [10,20,30,40,50,60,70,80,90,100]
+for i in num:
+    print(i)'''
+
+
+#you can use for loop to add data to the list as well.
+'''Write a program to insert 10 numbers starting from 1 to 10 to a list list = []'''
+#USing for loop:
+#numbers = [i for i in range(1,11)]
+#print(numbers)
+
+
+#Swapping list members
+'''name = ["suraj","mayank","sourabh","kanak","ajay"]
+print(name)
+name[0],name[4] = name[4],name[0]
+print(name)'''
+
+#swapping list numbers
+'''numbers = [1000,20,30,40,50,60,70,200000]
+print(numbers)
+numbers[0],numbers[7] = numbers[7],numbers[0]
+print(numbers)'''
+
+#--------list add string and swap string
+'''numbers = []
+print(numbers)
+
+numbers.append("suraj")
+numbers.append("mayank")
+numbers.append("harsh")
+numbers.append("ajay")
+print(numbers)
+
+numbers[0],numbers[3] = numbers[3],numbers[0]
+print(numbers)'''
+
+#----swapping value in variable (a,b ) using third variable
+'''a = 5
+b = 10
+c = 0
+print(a,b)
+c = a
+a = b
+b = c
+print(a,b)'''
+
+'''my_list = [10, 1, 8, 3, 5]
+total = 0
+for i in my_list:
+    total += i
+print(total)
+'''
+
+#---calculate sum using for loop.
+
+'''numbers = [5,5,5,5,5,5,5,5]
+sum = 0
+for i in range(len(numbers)):
+    sum += numbers[i]
+print(sum)'''
+
+
+'''lst = [1, 2, 3, 4, 5]
+lst_2 = []
+add = 0
+for number in lst:
+    add += number
+    lst_2.append(add)
+print(lst_2)
+print(lst)'''
+
+
+#--Calculate sum 0=of given list.
+
+'''numbers  =[10,20,30,40]
+sum = 0
+for i in range(len(numbers)):
+    sum += numbers[i]
+print(sum)'''
+
+
+#update existing list.
+'''num = [10,20,30,40,50,60]
+print(num)
+
+for count in range(10):
+    num[count] += 1
+
+print(count)'''
+
+
+#-----
+'''numbers = [10,20,30,40,50,60,70]
+for i in range(len(numbers)):
+    numbers[i] += 1
+print(numbers)'''
+
+#-----
+'''numbers = [10,20,30,40,50,60,70]
+for i in range(10):
+    numbers[i] += 1
+print(numbers)'''
+
+
+#--Empty list update---using fro loop---
+'''num = []
+for i in range(1,11):
+    num.append(i)
+print(num)'''
+
+
+#-traversing a list.
+'''num = [1,2,3,4,5,6,7,8,9,10]
+for i in range(len(num)):
+    print(i)'''
+
+#traversing a list.
+'''num = [1,2,3,4,5,6,7,8,9,10]
+for i in num:
+    print(i)'''
+
+
+'''numbers = [10,20,30,40,5,60,70,80]
+for i in range(len(numbers)):
+    numbers[i] += 1
+print(numbers)'''
+
+
+'''numbers  =[10,20,30,40] 
+sum = 0
+for i in range(len(numbers)):
+    sum += numbers[i]
+print(sum)'''
+
+'''num = []
+num.append(10)
+num.append(20)
+num.append(30)
+num.append(40)
+num.append(50)
+print(num)
+
+num[0],num[3]  = num[3],num[0]
+print(num)'''
+
+
+
+#numbers = [1,2,3,4,5]
+#print(len(numbers))
+#numbers.pop(0)
+#numbers.pop()
+#print(numbers)
+
+'''num = []
+for i in range(1,11):
+    num.append(i)
+print(num)'''
+
+'''num = [10,20,30,40,50,60,70,80]
+for i in range(len(num)):
+    num[i] += 1
+print(num)'''
+
+
+'''lst = [9,1,3,4,7,8,6,5,2]
+
+for i in range(len(lst)-1):
+    for j in range(len(lst)-1-i):
+        if lst[j] > lst[j+1]:
+            lst[j],lst[j+1] = lst[j+1],lst[j]
+           
+print(lst)'''
+
+
+'''list1 = [1,2,3,4,5]
+list2 = []
+add  = 0
+for num in list1:
+    add += num
+    list2.append(add)
+print(list1)
+print(list2)'''
+
+
+#sort---list.
+'''list = [10,4,2,7,8,1]
+for i in range(len(list)-1):
+    for j in range(len(list)-1-i):
+        if list[j] > list[j+1]:
+            list[j],list[j+1] = list[j+1],list[j]
+print(list)'''
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and George Harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete Best;
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
+ 
+ '''
+'''beatles = []
+print(beatles)
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Herrison")
+print(beatles)
+
+for i in range(1,2):
+   beatles.append("Stu Sutcliffe")
+   beatles.append("Pete Best")
+print(beatles)
+
+del beatles[3]
+del beatles[3]
+print(beatles)
+
+beatles.insert(0,"Ringo starr")
+print(beatles)'''
+
+'''a = 3
+b = 1
+c = 2
+lst = [a, c, b]
+lst.sort()
+print(lst)
+'''
+
+'''a = "A"
+b = "B"
+c = "C"
+d = " "
+lst = [a, b, c, d]
+lst.reverse()
+print(lst)'''
+
+'''list1 = [1]
+list2 = list1
+list1[0] = 2
+print(list2)'''
+
+'''lst = [5, 3, 1, 2, 4]
+
+lst.sort(reverse = True)
+print(lst)  # outputs: [4, 2, 1, 3, 5]
+'''
+
+'''list_1 = [1]
+list_2 = list_1[:]  # स्लाइस का उपयोग करते हुए list_1 की पूरी कॉपी बनाते हैं
+list_1[0] = 2
+print(list_2)  # आउटपुट: [1]'''
+
+#String(slicing):
+'''name = "SurajPatidar"
+
+print(name[5:10])
+print(name[:10])
+print(name[5:])
+print(name[:])
+print(name[-8:-3])
+print(name[5::2])
+print(name[::-1])'''
+
+'''my_list = [10, 8, 6, 4, 2]
+del my_list[1:3]
+print(my_list)'''
+
+'''my_list = [1,4,6,7,10]
+print(5 in my_list)
+print(1 in my_list)
+print(100 in my_list)'''
+
+'''list = [17,3,11,5,1,9,7,15,13]
+list = max(list)
+print(list)'''
+
+
+'''list = [10,20,50,100,30000,100,200,330]
+largest = 0
+for i in list:
+    if i > largest:
+        largest = i
+print("largest numbers is",largest)'''
+
+'''list = [1,2,3,4,5,6,7,8,9,0]
+list.reverse()
+print(list)'''
+
+'''my_list = [10, 8, 6, 4, 2]
+new_list = my_list[-1:1]
+print(new_list)'''
+
+#---largest numbers find in list
+'''list = [10,100,1500,130,900]
+largest = 0
+for i in list:
+    if i > largest:
+        largest = i
+print(largest)'''
+
+
+'''list = [2,4,6,1,8,10]
+smallest = 0
+for i in list:
+    if i <= smallest:
+        smallest = i
+print(smallest)'''
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and George Harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete Best;
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.'''
+
+'''beatles = []
+print(beatles)
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison ")
+print(beatles)
+
+for i in range(1,2):
+    beatles.append("Stu Sutcliffe")
+    beatles.append("Pete Best")
+print(beatles)
+
+del beatles[3]
+del beatles[3]
+print(beatles)
+
+beatles.insert(0,"Ringo Starr")
+print(beatles)'''
+
+
+'''num = []
+for i in range(1,11):
+    num.append(i)
+print(num)'''
+
+
+'''Your task is to write a program which removes all the number repetitions from the list. The goal is to have a list in which all the numbers appear not more than once.'''
+'''number = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+number2 = []
+for i in number:
+    if i not in number2:
+        number2.append(i)
+print(number2)'''
+
+'''my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)'''
+
+'''num = [1,2,7,5,10,22,77,5,222,8,]
+largest_number = 0
+for i in num:
+    if i > largest_number:
+        largest_number = i
+
+print(largest_number)'''
+
+'''num = [1,2,7,5,10,22,77,5,222,8,]
+smallest_number  = float("input")
+
+for i in num:
+    if i < smallest_number:
+        smallest_number = i
+print(smallest_number)'''
+
+'''num = [1,2,7,5,10,22,77,5,222,8,]
+sum = 0
+for i in num:
+    sum += i
+print(sum)'''
+
+'''lst = [9,1,3,4,7,8,6,5,2]
+
+for i in range(len(lst)-1):
+    for j in range(len(lst)-1-i):
+        if lst[j] > lst[j+1]:
+            lst[j],lst[j+1] = lst[j+1],lst[j]
+
+print(lst)'''
+
+
+'''numbers = [10,5,20,15,7,8]
+numbers.sort()
+print(numbers)'''
+
+
+'''#list = [1,2,3,4,5,6,7,8,9,10]
+list = [1,2,3,4,5,6,7,8,9]
+print(list)
+
+if len(list) // 2 % 2 == 0:
+    t = len(list)  / 2
+else:
+    t = len(list)//2 - 1
+    #typcasting float to int(t)
+t = int(t)
+
+for index in range(t):
+
+    list[index],list[-(index+1)] = list[-(index+1)],list[index]
+print("list after reverse",list)'''
+
+# reverse list
+'''list = [1,2,3,4,5,6,7,8,9,10]
+list.reverse()
+print(list)'''
+
+
+'''list_1 = [1]
+list_2 = list_1
+list_1[0] = 2
+print(list_1)
+
+list_1 = [1]
+list_2 = list_1[:]
+list_1[0] = 2
+print(list_2)
+
+list = [10,8,6,4,2]
+new_list = list[1:3]
+print(new_list)
+'''
+
+#find the largest element in list.
+'''number = [17,3,11,5,1,9,7,15,13]
+largest_number = 0
+for i in number:
+    if i > largest_number:
+        largest_number = i
+print("largest_number is",largest_number)'''
+
+
+
+# find element in list:
+'''number = [17,3,11,5,1,9,7,15,13]
+found = 0
+for i in range(len(number)):
+    if number[i] == 5:
+        print("Found 5 at index",i)
+        found = 1
+        break
+if found == 0:
+    print("sorry,5 is not found")'''
+
+
+#-dded 2 list element finding
+'''chosen_number = [3,7,11,42,34,49]
+draw_number = [5,11,9,42,3,49]
+number_hit = 0
+for i in chosen_number:
+    if i in draw_number:
+        number_hit += 1
+
+print(number_hit)'''
+
+#--list double element remove:
+list =[1,2,4,4,1,4,2,6,2,9]
+deleted = []
+for index in range(len(list)-1):
+    for index1 in range(index +1,len(list)):
+        if index1 not in deleted:
+            if list[index] == list[index1]:
+                deleted.append(index1)
+print(list)
+print(deleted)
+deleted.sort()
+print(deleted)
+for index in range(len(deleted)):
+    del list[deleted[len(deleted)-(index+1)]]
+print(list)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
