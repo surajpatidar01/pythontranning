@@ -15,8 +15,6 @@ my_list.insert(1,5)
 print(my_list)'''
 
 
-
-
 '''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
 The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
 Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
@@ -47,7 +45,9 @@ del beatles[3]
 print(beatles)
 
 beatles.insert(0,"Ringo Starr")
-print(beatles)'''
+print(beatles)
+'''
+
 
 
 '''Imagine you are creating a list to track the members of a fictional rock band. The band started with three members and later had some changes in the lineup.

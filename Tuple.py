@@ -7,7 +7,7 @@
 
 #cheak typ of tuple
 #fruit = ("Apple",)
-#print(type(fruit))
+
 
 #cheak the length of tuple.
 #colours = ("red","yellow","pink")

@@ -2135,9 +2135,10 @@ for i in range(len(numbers)):
 print(numbers)'''
 
 #-----
-'''numbers = [10,20,30,40,50,60,70]
-for i in range(10):
-    numbers[i] += 1
+'''numbers = [10,20,30,40,50,60,70,80,90,100]
+
+for i in range(7):
+      numbers[i] += 1
 print(numbers)'''
 
 
@@ -2479,8 +2480,8 @@ largest_number = 0
 for i in number:
     if i > largest_number:
         largest_number = i
-print("largest_number is",largest_number)'''
-
+print("largest Number is ", largest_number)
+'''
 
 
 # find element in list:
@@ -2495,7 +2496,7 @@ if found == 0:
     print("sorry,5 is not found")'''
 
 
-#-dded 2 list element finding
+#-
 '''chosen_number = [3,7,11,42,34,49]
 draw_number = [5,11,9,42,3,49]
 number_hit = 0
@@ -2506,7 +2507,7 @@ for i in chosen_number:
 print(number_hit)'''
 
 #--list double element remove:
-list =[1,2,4,4,1,4,2,6,2,9]
+'''list =[1,2,4,4,1,4,2,6,2,9]
 deleted = []
 for index in range(len(list)-1):
     for index1 in range(index +1,len(list)):
@@ -2519,7 +2520,151 @@ deleted.sort()
 print(deleted)
 for index in range(len(deleted)):
     del list[deleted[len(deleted)-(index+1)]]
+print(list)'''
+
+
+
+'''list = [1,2,3,4,5,6,7,8,9]
+sum = 0
+for i in list:
+
+        sum += i
+print("list sum is", sum)'''
+
+#delete double elements from a list:
+
+'''numbers = [6,4,2,9,1,3,1,2,6]
+new_numbers = list(set(numbers))
+
+print(new_numbers)'''
+
+
+# delete double elements from a list using for loop
+'''numbers = [1,3,4,6,1,2,3,4,5,6,7]
+new_numbers = []
+for i in numbers:
+    if i not in new_numbers:
+        new_numbers.append(i)
+print(new_numbers)'''
+
+
+
+
+#list comprehension:
+
+'''numbers = [12,45,34,8,10,3,100,120,43,65]
+new_numbers = []
+for i in numbers:
+    if i > 3:
+        new_numbers.append(i)
+
+print(new_numbers)'''
+
+
+#other way:
+'''numbers = [12,45,34,8,10,3,100,120,43,65]
+new_numbers = [numbers for numbers in numbers if numbers > 25]
+print(new_numbers)
+'''
+
+#list comprehension for string:
+'''fruit = ["apple","banana","cherry","kiwi"]
+new_fruits = [fruit for fruit in fruit if  "a" in fruit]
+print(new_fruits)'''
+
+
+
+
+
+#usion long loop method:
+'''fruits = ["apple","banana","cherry","kiwi"]
+new_fruits = [ ]
+for i in fruits:
+    if "a" in i:
+        new_fruits.append(i)
+print(new_fruits)'''
+
+
+
+#copy a list:
+'''list = [1,2,3,4,5,6,7,8,9]
 print(list)
+new_list = list.copy()
+print(new_list)'''
+
+
+#list comprehension:
+
+'''name = []
+for i in range(1,9):
+    name.append("WHITE_PAWN")
+print(name)'''
+
+#list comprehension : other way
+'''name = []
+name = ["WHITE_PAWN" for i in range(1,9)]
+print(name)'''
+
+
+#update the list 0,10 for all the square number:
+'''number = []
+for i in range(4):
+   number.append( i ** 2)
+print(number)'''
+
+
+'''numbers =[1,2,3,1,4,4,4,4,4,4,4,5,6,7,8,2,]
+new_number = []
+for i in numbers:
+    if i not in new_number:
+        new_number.append(i)
+print(new_number)'''
+
+
+'''list =[1,2,4,4,1,4,2,6,2,9]
+deleted = []
+for index in range(len(list)-1):
+    for index1 in range(index +1,len(list)):
+        if index1 not in deleted:
+            if list[index] == list[index1]:
+                deleted.append(index1)
+print(list)
+print(deleted)
+deleted.sort()
+print(deleted)
+for index in range(len(deleted)):
+    del list[deleted[len(deleted)-(index+1)]]
+print(list)'''
+
+'''list = []
+WHITE_PAWN = 1
+#for i in range(8):
+list = [WHITE_PAWN for i in range(8)]
+   # list.append(WHITE_PAWN)
+print(list)'''
+
+'''square = []
+square =[x ** 2 for x in range(10)]
+print(square)
+odds = [x for x in square if x % 2 != 0 ]
+print(odds)'''
+
+
+
+
+
+'''twos = []
+twos = [2** i for i in range(8)]
+print(twos)'''
+
+
+'''board = []
+
+for i in range(8):
+    row = ["EMPTY" for i in range(8)]
+    board.append(row)
+print(board)
+'''
 
 
 
@@ -2527,8 +2672,398 @@ print(list)
 
 
 
+'''print(" "*5, end="*\n")
+
+print(" "*4, " "*2, sep="*", end="*\n")
+
+print(" "*2,  " "*6, sep="*", end="*\n")
+
+print("*"*3," "*4,"*"*3 )
+
+print("  *      *")
+print(" "*2, " "*6, sep="*", end="*\n")
+print(" "*2, " "*6, sep="*", end="*\n")
+
+print(" "*1,"*"*8)'''
 
 
+'''a  = 2
+b = 2
+c  = 2 +2
+print("sum or a and b is", c)
+c = a - b
+print("difference of a and b is", c)
+c = a * b
+print("multiplication  and b is ",c)
+c = a / b
+print("division of a and b is",c)
+c = a // b
+print("division floored a and b is ", c)
+c = a % b
+print("remainder of a and b is ",c)
+c = a ** b
+print("a to the power b is",c)'''
+
+
+# Logical operator:
+
+'''x= 2
+
+print(x < 5 and x < 10)
+
+x =4
+
+print(x < 5 or x < 4)
+
+x = 11
+print(not(x < 5 and x < 10))'''
+
+#identity operator:
+'''x = 5
+y = 6
+print(x is y)
+print(x is not y)
+'''
+
+
+'''x = ['suraj']
+y = ['suraj']
+z = [x is not y]
+print(z)'''
+
+
+#Q(--Write a Python program to find the list of words that are longer than n from a given list of words.)
+
+'''fruits = ["apple","banana","cherry","kiwi"]
+n = 5
+new_list = []
+for element in fruits:
+    if (len(element) > n):
+        new_list.append(element)
+print(new_list)
+'''
+
+#Write a Python program to count the number of strings from a given list of strings. The string length is 2 or
+# more and the first and last characters are the same. Sample List : ['abc', 'xyz', 'aba', '1221'] Expected Result : 2
+'''Sample_List = ['abc', 'xyz', 'aba', '1221']
+count = 0
+for i in Sample_List:
+    if i[0] == i[-1]:
+        count += 1
+print(count)'''
+
+
+
+# remove duplicate numbers from a list:
+'''list = [1,2,3,4,5,6,77,2,5,4,62,56,1,2,3,4,5]
+duplicate_numbers = []
+for element in list:
+    if element not in duplicate_numbers:
+        duplicate_numbers.append(element)
+print(duplicate_numbers)'''
+
+
+#----
+
+
+
+
+
+
+#list _comprehension:
+'''list = [20,3,40,50,60,70,0,80,90]
+new_list = []
+for i in list:
+    if i > 50:
+        new_list.append(i)
+print(new_list)'''
+
+
+#
+'''square = []
+square =[x ** 2 for x in range(10)]
+print(square)
+odds = [x for x in square if x % 2 != 0 ]
+print(odds)'''
+
+
+#list comprehension:
+
+'''temps = [[0.0 for h in range(24)] for d in range(31)]
+#print(temps)
+
+
+total = 0.0
+for day in temps:
+    total += day[11]
+average = total / 31
+print(average)
+
+
+highest = -100
+for day in temps:
+    for temps in day:
+        if temps > highest:
+            highest = temps
+print("The highest temp was:",highest)'''
+
+
+#rooms = [[[False for r in range(20)]for f in range(15)]for t in range(3)]
+#print(rooms)
+
+'''#avalible
+row = 15
+flor = 15
+rooms = false
+
+for rows in range(20):
+    if rows[2][14][rows] == false
+        print("vacant rooms")
+    else:
+        print("room is not vacant")'''
+
+
+'''nums = [1,2,3]
+vals = nums[-1:-2]
+print(vals)'''
+
+
+'''for i in range(1):
+    print("#")
+else:
+    print("#")
+'''
+
+
+#Q 3 Write a Python program to get the largest number from a list
+'''numbers = [10,20,34,23,440,324,2045,424,2424,353,4334,3353,]
+largest_number = 0
+for i in numbers:
+    if i > largest_number:
+        largest_number = i
+print(largest_number)'''
+
+#find smallest_number in list :
+'''numbers = [10,20,34,23,440,324,2045,424,2424,353,4334,3353,]
+smallest_number = numbers[0]
+for i in numbers:
+    if i < smallest_number:
+        smallest_number = i
+print(smallest_number)'''
+
+
+
+#Remove Even Numbers from List | List: [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
+'''List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
+odd_list = []
+for i in List:
+    if i % 2 != 0:
+        odd_list.append(i)
+print(odd_list)'''
+
+
+#Write a Python program to find the index of an item in a specified list. |
+# List: [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7], find index of element 0
+#List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
+
+
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and George Harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete Best;
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
+ '''
+
+'''beatles = []
+print(beatles)
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print(beatles)
+
+for i in range(1,2):
+    beatles.append("Stu Sutcliffe")
+    beatles.append("Pete Best")
+    print(beatles)
+
+del beatles[3]
+del beatles[3]
+print(beatles)
+
+beatles.insert(0,"Ringo starr")
+print(beatles)'''
+
+
+
+'''Imagine you are creating a list to track the members of a fictional rock band. The band started with three members and later had some changes in the lineup.
+
+Your task is to write a program that performs the following steps:
+
+Step 1: Create an empty list named band_members.
+Step 2: Use the append() method to add the following members to the band: "Alice Cooper", "Jim Morrison", and "Jimi Hendrix".
+Step 3: Use a for loop and the append() method to prompt the user to add two more members of the band: "Janis Joplin" and "Mick Jagger".
+Step 4: Use the del instruction to remove "Jim Morrison" and "Jimi Hendrix" from the list.
+Step 5: Use the insert() method to add "Keith Richards" to the beginning of the list.
+Step 6: Display the final list of band members'''
+
+'''band_members =[]
+print(band_members)
+
+band_members.append("Alice Cooper")
+band_members.append("Jim Morrison")
+band_members.append("Jimi Hendrix")
+print(band_members)
+
+for i in range(1,2):
+    band_members.append("Janis Joplin")
+    band_members.append("Mick Jagger")
+print(band_members)
+
+del band_members[1]
+del band_members[1]
+print(band_members)
+
+band_members.insert(0,"Keith Richards")
+print(band_members)'''
+
+
+#Write a Python program to find the second smallest number in a list. | List: [0, 3, 4, 7, 9]
+
+'''list  = [0, 3, 4, 7, 9]
+
+list.sort()
+print(list)
+second_smallest = list[1]
+print(second_smallest)'''
+
+
+#-Write a Python program to find the second largest number in a list. | [0, 3, 4, 7, 9]
+
+'''numbers = [0, 3, 4, 7, 9]
+numbers.sort()
+print(numbers)
+second_largest = numbers[-2]
+print(second_largest)'''
+
+#-Write a Python program to append a list to the second list. | List: [0, 3, 4, 7, 9], [3, 5, 7, 13]
+'''num1 = [0, 3, 4, 7, 9]
+num2 = [3, 5, 7, 13]
+for i in num1:
+    num2.append(i)
+print(num2)'''
+
+
+
+
+
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and George Harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete Best;
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
+ '''
+
+
+
+'''beatles = []
+print(beatles)
+
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print(beatles)
+
+for i in range(1,2):
+    beatles.append(" Stu Sutcliffe")
+    beatles.append("Pete Best")
+    print(beatles)
+
+del beatles[3]
+del beatles[3]
+print(beatles)
+
+beatles.insert(0,"Ringo starr")
+print(beatles)'''
+
+
+#ascii value
+#char = "a"
+  
+#print(ord(char))
+
+#num = 66
+#print(chr(num))
+
+# write a program using loop to print 10 even numbers in reverse order:
+# while loop
+'''num = 20
+while  num  > 0:
+    print(num)
+    num = num -2'''
+
+# using for loop:
+'''for i in range(20,0,-2):
+    print(i)'''
+
+
+
+# string is palindrome or not:
+'''name = input("please enter name:")
+reverse = ""
+for char in name:
+    reverse= char + reverse
+if reverse == name:
+    print("YES palindrome string")
+else:
+    print("NOT a palindrome string")'''
+
+
+
+
+# function--
+'''def message():
+    print("Enter a value: ")
+print("We start here.")
+message()
+print("We and here")'''
+
+
+'''print("We start here.")
+message()
+print("We and here")
+def message():
+    print("Enter a value: ")
+'''
+
+
+'''def message():
+    print("Enter a value: ")
+
+message()
+a = int(input())
+message()
+b = int(input())
+message()
+c = int(input())'''
+
+
+def hello(name):
+    print("Hello ", name)
+name = input("Enter your name:")
+hello(name)
 
 
 
