@@ -178,9 +178,9 @@ print(new_fruits)'''
 
 '''List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
 odd_numbers = []
-for  i in List:
-    if i % 2 != 0:
-       odd_numbers.append(i)
+for  element in List:
+    if element % 2 != 0:
+       odd_numbers.append(element)
 print(odd_numbers)'''
 
 #Q2-Write a Python program to generate and print a list of the first 5 and last
@@ -198,11 +198,19 @@ print("Last 5 square numbers:", last5)
 '''
 
 #Q3--Check If All Numbers Are Prime | Lists: [0, 3, 4, 7, 9], [3, 5, 7, 13], [1, 5, 3]
-'''List = [0, 3, 4, 7, 9]
-for i in List:
-    if i %1 == 0 or i % List[i] == 0:
+'''def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-        print(List)'''
+List = [0, 3, 4, 7, 9]
+
+all_prime = all(is_prime(i) for i in List)
+
+print("All numbers are prime?" , all_prime)'''
 
 
 #Q4--Write a Python program to convert a list of characters into a string
@@ -228,7 +236,7 @@ for i in range(len(List)):
 #Q6_-Write a Python program to append a list to the second list. | List: [0, 3, 4, 7, 9], [3, 5, 7, 13]
 
 '''List1 = [0, 3, 4, 7, 9]
-List1 = [0, 3, 4, 7, 9]
+List2 = [0, 3, 4, 7, 9]
 
 list2 += List1
 print("Update result",list2)'''
@@ -259,7 +267,7 @@ print(second_largest)'''
 
 #Q9--Write a Python program to get the frequency of elements in a list. | List: [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
 
-'''List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]\
+'''List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
 for i in List:
     if i'''
 
@@ -275,7 +283,6 @@ if List2 in List1:
     print("List 1 contains List 2 as a sublist.")
 else:
     print("List 1 contains List 2 as a sublist.")'''
-
 
 
 

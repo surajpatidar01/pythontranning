@@ -3,6 +3,8 @@ from os import WCONTINUED
 
 #from ctypes.macholib.dyld import DEFAULT_LIBRARY_FALLBACK
 from hashlib import algorithms_available
+from tkinter.font import names
+
 '''
 a=40
 b=20
@@ -3060,36 +3062,280 @@ message()
 c = int(input())'''
 
 
-def hello(name):
+'''def hello(name):
     print("Hello ", name)
 name = input("Enter your name:")
-hello(name)
+hello(name)'''
+
+
+#Write a Python program to find the sum of all elements in a 2D list.  [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25]]
+
+'''numbers =  [[1, 1], [2, 4], [3, 9], [4, 16], [5, 25]]
+total_sum = 0
+for rows in numbers:
+    for columns in rows:
+        total_sum += columns
+print("sum of all elements in a 2D list",total_sum)'''
+
+
+
+'''def message(number):
+    print("Enter a number:",number)
+message(1)'''
+
+
+'''def message(number):
+    print("Enter a number:",number)
+
+number  =1234
+message(1)
+print("number:",number)'''
+
+
+
+
+'''def message(what,number):
+    print("Enter",what,"number",number)
+
+message("telephone",11)
+message("price",5)
+message("number","number")
+'''
+
+
+'''def introductions(first_name,last_name):
+    print("Hello, my name is",first_name,last_name)
+
+introductions(first_name = "James",last_name = "Bond")
+introductions(last_name = "Skywalker",first_name = "Luke")'''
+
+
+'''def adding(a,b,c):
+    print(a,"+",b,"+",c,"=",a+b+c)
+
+#adding(1,2,3)
+adding(c = 1,a= 2,b = 3)
+adding(3,c = 1,b = 2)
+adding(3,a = 1,b = 2)
+'''
+
+
+
+'''def add_numbers (a, c, b = 2):
+    print(a+b+c)
+add_numbers(a = 1, c = 3)'''
+
+
+
+'''def happy_new_year(wishes = True):
+    print("Three...")
+    print("Two...")
+    print("One...")
+    if not wishes:
+        return
+    print("Happy new Year!")
+#happy_new_year()
+happy_new_year(False)'''
+
+
+
+'''def boring_function():
+    return 123
+x = boring_function()
+print("The boring_function has returned its result , It 's :",x)'''
+
+
+
+'''def boring_function():
+    print("'Boredom Mode' ON. ")
+    return 123
+print("The lesson is interesting")
+boring_function()
+print("This lesson is boring...")'''
 
 
 
 
 
+#print(None + 2)
 
 
 
 
+#None
+'''value = None
+if value is None:
+    print("Sorry,you don't carry any value")'''
+
+
+'''def list_sum(lst):
+    s  = 0
+    for elem in lst:
+        s += elem
+
+    return s
+print(list_sum([5,4,3]))
+#print(list_sum(5))
+'''
+
+'''def strange_list_fun(n):
+    strange_list = []
+
+    for i in range(0,n):
+        strange_list.insert(0,i)
+    return strange_list
+print(strange_list_fun(5))
+#print(strange_list_fun(50))
+#print(strange_list_fun(100))'''
 
 
 
+'''def hello():
+    print("Namaste")
+
+hello()'''
 
 
 
+'''def greet_user(name):
+    def say_hello():
+        print(f"Namaste, {name}!")
+    return say_hello
+
+# Step 1: Naam lo
+user_name = input("Apna naam daalein: ")
+
+# Step 2: Function call karo aur greeting function lo
+greeting = greet_user(user_name)
+
+# Step 3: Jab chahein greet karo
+print("Aapka welcome message:")
+greeting()'''
 
 
 
+# leap year
+
+'''def is_year_leap(year):
+
+    if year % 4 == 0  and  year % 100 != 0:
+        return True
+
+    elif year % 400 == 0:
+        return True
+    else:
+        return False
+
+test_data = [1900,2000,2016,1987]
+test_results = [False,True,True,False]
+for i in range(len(test_data)):
+    yr = test_data[i]
+    print(yr,"->",end = "")
+    result = is_year_leap(yr)
+    if result == test_results[i]:
+        print("OK")
+    else:
+        print("Failed")'''
+
+
+'''def scope_test():
+    x = 123
+scope_test()
+
+print(x)'''
+
+
+'''def my_function():
+    print("Do I know that variable?",var)
+var  = 1
+my_function()
+print(var)'''
+
+
+#Globle keyword:
+'''def my_function():
+    global var
+    var = 2
+    print("Do i know that variable?",var)
+var= 1
+my_function()
+print(var)'''
+
+
+#sum numbers;
+
+'''def sum(n1,n2):
+    add = n1 + n2
+    print(add)
+    return add
+sum(2,3)'''
+
+'''def print_hello():
+    print("Hello World")
+print_hello()'''
+
+
+'''def scope_test():
+    x = 123
+scope_test()
+print(x)'''
+
+
+'''def message():
+        alt = 1
+        print("Hello, World!")
+message()
+print(alt)
+'''
+'''
+def my_function(n):
+    print("I got ",n)
+    n += 1
+    print("I have ",n)
+
+var = 1
+my_function(var)
+print(var)'''
+
+
+'''def my_function(my_list_1):
+    print("print #1:",my_list_1)
+    print("print #2:", my_list_2)
+    my_list_1 = [0,1]
+    print("print #3:",my_list_1)
+    print("print #4:",my_list_2)
+
+my_list_2 = [2,3]
+my_function(my_list_2)
+print("print #5:",my_list_2)'''
 
 
 
+'''def my_function(my_list_1):
+    print("print #1:",my_list_1)
+    print("print #2:", my_list_2)
+    del my_list_1[0]
+    print("print #3:",my_list_1)
+    print("print #4:",my_list_2)
+
+my_list_2 = [2,3]
+my_function(my_list_2)
+print("print #5:",my_list_2)'''
 
 
 
+# bmi calculate
 
+'''Weight = float(input("Enter weight "))
+Height = float(input("Enter a height; "))
+def bmi(weight,height):
+    return weight / height **2
+print(bmi(Weight,Height))'''
 
-
-
-
+# Evaluation BMI and converting imperial units to metric units:
+'''def bmi(weight,height):
+    if height < 1.0 or height > 2.5 or \
+        weight < 20 or weight > 200:
+        return None
+    return weight / height **2
+print(bmi(352.5 , 1.65))'''
