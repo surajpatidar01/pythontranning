@@ -3324,7 +3324,7 @@ print("print #5:",my_list_2)'''
 
 
 
-# bmi calculate
+# bmi calculate(user input)
 
 '''Weight = float(input("Enter weight "))
 Height = float(input("Enter a height; "))
@@ -3339,3 +3339,75 @@ print(bmi(Weight,Height))'''
         return None
     return weight / height **2
 print(bmi(352.5 , 1.65))'''
+
+
+# convert imperial unit to metric once(lb to kg )(364)
+
+'''def lb_to_kg(lb):
+    return lb * 0.45359237
+
+print(lb_to_kg(1))'''
+
+
+#-----ft and inch to meter
+'''def ft_and_inch_to_m(ft,inch):
+    return ft * 0.3048 + inch * 0.0254
+
+print(ft_and_inch_to_m(1,1))'''
+
+#----
+'''def ft_and_inch_to_m(ft,inch = 0.0):
+    return ft * 0.3048 + inch * 0.0254
+
+print(ft_and_inch_to_m(6))'''
+
+
+
+#---The code is able to answer the question: what is the BMI of a person 5'7" tall and weighing 176 lbs?
+'''def ft_and_inch_to_m(ft, inch = 0.0):
+          return ft * 0.3048 + inch * 0.0254
+def lb_to_kg(lb):
+          return lb * 0.4535923
+def bmi(weight, height):
+          if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
+              return None
+          return weight / height ** 2
+print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7)))'''
+
+
+# factorial numbers:
+'''
+n = int(input("Enter number of n  :"))
+def factorial_function(n):
+    if n < 0:
+        return None
+    if n < 2 :
+        return 1
+    product = 1
+    for i in range(2,n+1):
+        product *= i
+    return product
+
+for n in range(1,6):
+    print(n,factorial_function(n))
+'''
+
+
+
+
+
+
+print()
+
+
+
+
+
+
+
+
+
+
+
+
+
