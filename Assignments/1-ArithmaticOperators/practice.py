@@ -1,4 +1,5 @@
 from ctypes import pythonapi
+from enum import nonmember
 from os import WCONTINUED
 
 #from ctypes.macholib.dyld import DEFAULT_LIBRARY_FALLBACK
@@ -3396,10 +3397,302 @@ for n in range(1,6):
 
 
 
+# calculate geometric mean(by function)(formula = (a*b)/(b+a)
 
-print()
+'''def calculate_geometric_mean(a,b):
+    mean = (a*b)/(b+a)
+    print(mean)
+a = 5
+b = 6
+calculate_geometric_mean(a,b)
+
+#c = 8
+#d = 9
+calculate_geometric_mean(8,9)
+
+n1 = 12
+n2 = 15
+calculate_geometric_mean(n1,n2)
+
+#by user input
+num1 = int(input("Enter n:"))
+num2 = int(input("Enter n:"))
+calculate_geometric_mean(num1,num2)'''
 
 
+# calculate greater number by function:
+'''def calculate_greate(a,b):
+    if (a>b):
+        print("First number is greater")
+    else:
+        print("second number is greater of equal")
+
+a = 5
+b = 3
+calculate_greate(a,b)
+
+num1 = 10
+num2 = 20
+calculate_greate(num1,num2)'''
+
+
+# calculate factorial number using for loop:
+'''n = int(input("Enter a number :"))
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+print("factorial is ",fact)'''
+
+
+# using while loop factorial number
+'''n = int(input("Enter a number of n  :"))
+fact = 1
+i = 1
+while i <= n :
+    fact = fact * i
+    i = i +1
+print("factorial is ",fact)
+'''
+
+
+
+# Area calculation on Triangle:
+'''a  = int(input("Enter a number of a :"))
+b = int(input("Enter a number of b :"))
+c = int(input("Enter a number pf c :"))
+
+s = (a+b+c)/2
+area = (s*(s-a)*(s-b)*(s-c))**0.5
+print("Triangle area of :",area)'''
+
+
+#def function of area calculation
+'''def area_of_triangle(a,b,c):
+    s = (a +b+c)/2
+    area = (s*(s-a)*(s-b)*(s-c))**0.5
+    print(area)
+
+#a = int(input("Enter number a :"))
+#b = int(input("Enter number b :"))
+#c = int(input("Enter number c :"))
+
+
+a = 50
+b = 50
+c = 18
+area_of_triangle(a,b,c)'''
+
+
+
+
+# def function factorial number calculate
+'''def factorial_number(n):
+    fact = 1
+
+    for i in range(1,n+1):
+        fact = fact * i
+    print(fact)
+
+factorial_number(5)'''
+
+# fibonacci series by function:
+'''n = int(input("Enter number n :"))
+def fib(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        n = fib(n-1) + fib(n-2)
+fib(n)
+print(n)'''
+
+
+
+#area calculation of square two side
+'''def area_calculation(a,b):
+    c = a * b
+    print(c)
+
+a = int(input("Enter a :"))
+b = int(input("Enter b :"))
+area_calculation(a,b)'''
+
+
+'''
+def cheak_Even_Odd(n):
+    if n % 2 == 0:
+        return "Even"
+
+    else:
+        return "Odd"
+
+
+n = int(input("Enter number n:"))
+# print(cheak_Even_Odd(n))
+result = cheak_Even_Odd(n)
+print(result'''
+
+
+
+'''def fac(n):
+    if n <= 1:
+        print("n = ",n )
+        print("returning 1 from less than equal to 1")
+        return 1
+    else:
+        print("calling fac(",n-1,")")
+        res = fac(n-1) * n
+        print("finally returning res:",res)
+        return res
+
+print(fac(5))'''
+
+
+'''def fibo(n):
+    if n < 2:
+        return 1
+    else:
+        result = fibo(n -1) + fibo(n-2)
+        print(result)
+        return result
+
+
+n = int(input("enter n:"))
+print(fibo(n))'''
+
+
+
+# print fibonacci series using function  input number of n :
+
+'''def fib(n):
+    if n == 0  or n == 1:
+        return n
+    else:
+        return fib(n-1) + fib(n-2)
+n = int(input("Enter a number of n :"))
+i = 0
+while i < n:
+    print(fib(i),end = " ")
+    i += 1'''
+
+
+# tuple
+'''tuple_1 = (1,2,3,4,5)
+tuple_2 = 1,2,3,4,5
+print(tuple_1)
+print(tuple_2)
+print(type(tuple_1))
+print(type(tuple_2))
+
+
+
+empty_tuple = ()
+print(empty_tuple)
+print(type(empty_tuple))
+
+new_tuple = 1,
+print(new_tuple)
+print(type(new_tuple))
+
+
+my_tuple = (1,10,100,1000)
+#my_tuple.append(10000)
+#del my_tuple[0]
+#my_tuple[1] = -10
+print(len(my_tuple))
+
+
+tuple_1 = (1,2,3,4,5)
+tuple_2 = 6,7,8,9,10
+tuple_3 = tuple_1+tuple_2
+print(tuple_3)
+tuple_4 = tuple_3 * 4
+print(tuple_4)
+
+#loop
+tuple_1 = (1,2,3,4,5)
+for element in tuple_1:
+    print(element)
+
+# convert list to tuple:
+my_list = [2,4,6]
+tup = tuple(my_list)
+print(tup)
+print(type(tup))
+
+#wapping tuple:
+var = 123
+t1 = (1,)
+t2 = (2,)
+t3 = (3,var)
+t1,t2,t3 = t2,t3,t1
+print(t1,t2,t3)'''
+
+
+# dictionary:
+'''dictionary = {"cat": "chat", "dog": "chien","horse":"cheval"}
+phone_numbers = {"boss": 5551234567, "suzy": 22657854310}
+empty_dictionary = {}
+print(dictionary)
+print(type(dictionary))
+print(phone_numbers)
+print(type(phone_numbers))
+print(empty_dictionary)
+print(type(empty_dictionary))
+print(dictionary["cat"])
+#print(dictionary"suzy"])'''
+
+
+
+'''dictionary = {"cat","chat","dog","chien","horse","cheval"}
+words = {"cat","lion","horse"}
+for word in words:
+    if word in dictionary:
+        print(word, "->", dictionary)
+    else:
+        print(word,"is not in dictionary")'''
+
+
+
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+for key in dictionary.keys():
+    print(key, "->",dictionary[key])'''
+
+
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+for french in dictionary .values():
+    print(french)'''
+
+
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+print(dictionary)
+dict_2 = dictionary.copy()
+print(dict_2)
+
+dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+dictionary["cat"] = "lock"
+print(dictionary["cat"])'''
+
+# add
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+dictionary["adam"] = 123
+print(dictionary)'''
+
+
+#delete
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+del dictionary["Adam"]
+print(dictionary)'''
+
+
+#popitem
+''''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+dictionary.popitem()
+print(dictionary)
+'''
+#delete dict...
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+dictionary.clear()
+print(dictionary)'''
 
 
 

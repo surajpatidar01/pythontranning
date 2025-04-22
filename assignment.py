@@ -236,7 +236,7 @@ for i in range(len(List)):
 #Q6_-Write a Python program to append a list to the second list. | List: [0, 3, 4, 7, 9], [3, 5, 7, 13]
 
 '''List1 = [0, 3, 4, 7, 9]
-List2 = [0, 3, 4, 7, 9]
+List2 = [0, 3, 4, 7, 9]3
 
 list2 += List1
 print("Update result",list2)'''

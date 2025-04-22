@@ -85,27 +85,6 @@ print("0000000000")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 a=50
 b=10
 c=0
@@ -145,6 +124,10 @@ print(" "*2, " "*6, sep="*", end="*\n")
 print(" "*2, " "*6, sep="*", end="*\n")
 
 print(" "*1,"*"*8)
+
+
+
+
 
 
 
@@ -317,9 +300,9 @@ for i in range(1,n+1):
 
 
 # List(mutable)
-fruits = ["Apple","banana","cherry","Kiwi"]
-fruits[0] = 1
-print(fruits)              # print a list
+#fruits = ["Apple","banana","cherry","Kiwi"]
+#fruits[0] = 1
+#print(fruits)              # print a list
 
 #print(type(fruits))       #cheak type of list
 
@@ -327,4 +310,23 @@ print(fruits)              # print a list
 
 # checking if item is present  in a list.
 
+
+
+
+# calculate factorial number using for loop:
+n = int(input("Enter a number :"))
+fact = 1
+for i in range(1,n+1):
+    fact = fact * i
+print("factorial is ",fact)
+
+
+# using while loop factorial number
+n = int(input("Enter a number of n  :"))
+fact = 1
+i = 1
+while i <= n :
+    fact = fact * i
+    i = i +1
+print("factorial is ",fact)
 
