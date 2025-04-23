@@ -3619,7 +3619,7 @@ tup = tuple(my_list)
 print(tup)
 print(type(tup))
 
-#wapping tuple:
+#swapping tuple:
 var = 123
 t1 = (1,)
 t2 = (2,)
@@ -3639,7 +3639,7 @@ print(type(phone_numbers))
 print(empty_dictionary)
 print(type(empty_dictionary))
 print(dictionary["cat"])
-#print(dictionary"suzy"])'''
+#print(phone)numbers["suzy"])'''
 
 
 
@@ -3652,8 +3652,8 @@ for word in words:
         print(word,"is not in dictionary")'''
 
 
-
-'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+'''
+dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
 for key in dictionary.keys():
     print(key, "->",dictionary[key])'''
 
@@ -3667,10 +3667,12 @@ for french in dictionary .values():
 print(dictionary)
 dict_2 = dictionary.copy()
 print(dict_2)
+'''
 
-dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
 dictionary["cat"] = "lock"
-print(dictionary["cat"])'''
+print(dictionary["cat"])
+print(dictionary)'''
 
 # add
 '''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
@@ -3679,21 +3681,127 @@ print(dictionary)'''
 
 
 #delete
-'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval","Adam":"suraj"}
 del dictionary["Adam"]
 print(dictionary)'''
 
 
 #popitem
-''''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
 dictionary.popitem()
-print(dictionary)
-'''
+print(dictionary)'''
+
 #delete dict...
 '''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
 dictionary.clear()
 print(dictionary)'''
 
+
+
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+for i in dictionary:
+    print(i , dictionary[i])'''
+
+'''
+dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+phone_numbers = {"boss": 5551234567, "suzy": 22657854310}
+print(dictionary["cat"])
+print(phone_numbers["suzy"])'''
+
+
+''''dictionary ={"name": "suraj" , "num": 123}
+dictionary["num"]  = 9753
+print(dictionary)'''
+
+
+
+'''dictionary ={"name": "suraj" , "num": 123}
+dictionary["class"] = "5th"
+print(dictionary)'''
+
+# print fibonacci numbers using recursion:
+'''def fib(n):
+    if  n == 0 or n == 1:
+        return n 
+    else:
+        return fib (n-1) + fib (n-2)
+    
+n = int(input("Enter a number of n :"))
+i = 0
+while i < n :
+    print(fib(i),end = " ")
+    i += 1'''
+
+
+'''dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+for key ,value in dictionary.items():
+    print(dictionary,"->",key, ":",value)
+    '''
+
+'''
+dictionary = {"cat": "chat", "dog":"chien","horse":"cheval"}
+print(dictionary)
+dictionary.update({"zadam": "zadaam" })
+print(dictionary)
+'''
+
+
+#---tuples dictionary can work together:
+'''school_class = {}
+while True:
+    name = input("Enter the student's name:")
+    if name == "":
+        break
+
+    score = int(input("Enter the student's score (0-10): "))
+    if score not in range(0,11):
+        break
+
+    if name in school_class:
+        school_class[name] += (score,)
+    else:
+        school_class[name] = (score,)
+
+for name in sorted(school_class.keys()):
+    adding = 0
+    counter  = 0
+    for score in school_class[name]:
+        adding += score
+        counter = 1
+    print(name,":",adding/counter)'''
+
+
+#---
+#my_tup = (1,2,3)
+#print(my_tup[2])
+
+'''tup = 1,2,3
+a,b,c = tup
+print(a*b*c)'''
+
+#---count tup(duplicte number)
+'''tup = (1,2,3,2,4,5,6,2,7,2,8,9)
+duplicates = tup.count(2)
+print(duplicates)'''
+
+
+#--
+'''d1 = {"Adam smith": "A","Judy Faxton": "B+"}
+d2 = {"Mary louis": "A","Fatrick white": "C"}
+d3 = {}
+for item in (d1,d2):
+    d3.update(item)
+print(d3)'''
+
+# convert list to tuple using tuple method
+'''my_list = ["car","Ford","Flower","Tulip"]
+t = tuple(my_list)
+print(t)'''
+
+#convert tuple to dictionary:
+'''colors = (("green","#008000"),("blue","#0000FF"))
+colors_dictionary = dict(colors)
+print(colors_dictionary)'''
 
 
 
