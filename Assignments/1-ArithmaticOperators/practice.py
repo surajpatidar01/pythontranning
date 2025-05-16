@@ -3779,7 +3779,7 @@ for name in sorted(school_class.keys()):
 a,b,c = tup
 print(a*b*c)'''
 
-#---count tup(duplicte number)
+#---count tup(duplicate number)
 '''tup = (1,2,3,2,4,5,6,2,7,2,8,9)
 duplicates = tup.count(2)
 print(duplicates)'''
@@ -3805,10 +3805,341 @@ print(colors_dictionary)'''
 
 
 
+# reverse a tuple:
+'''tuples = (5,4,3,2,1)
+print(tuples)
+for i in reversed(tuples):
+    print(i,end = " ")'''
+
+
+# reverse tuple:
+'''tuples = (1,2,3,4,5,6)
+list = []
+for i in reversed(tuples):
+    list.append(i)
+
+output  = tuple(list)
+print(output)'''
+
+
+# set deta type:
+'''name= {"john","marry","dav"}
+print(name)
+print(name)
+print(name)'''
+
+
+'''The Beatles were one of the most popular music groups of the 1960s, and the best-selling band in history. Some people consider them to be the most influential act of the rock era. Indeed, they were included in Time magazine's compilation of the 20th Century's 100 most influential people.
+The band underwent many line-up changes, culminating in 1962 with the line-up of John Lennon, Paul McCartney, George Harrison, and Richard Starkey (better known as Ringo Starr).
+Write a program that reflects these changes and lets you practice with the concept of lists. Your task is to:
+● step 1: create an empty list named beatles;
+● step 2: use the append() method to add the following members of the band to the list: John Lennon,
+Paul McCartney, and George Harrison;
+● step 3: use the for loop and the append() method to prompt the user to add the following members of
+the band to the list: Stu Sutcliffe, and Pete Best;
+● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
+● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
+ '''
+
+'''beatles = []
+print(beatles)
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+print(beatles)
+for i in range(1,2):
+    beatles.append("Stu Sutcliffe")
+    beatles.append("Pete Best")
+print(beatles)
+del beatles[3]
+print(beatles)
+beatles.insert(0,"Ringo Starr")
+print(beatles)'''
+
+#--recursion using print fibonacci series :
+'''def fib(n):
+    if n == 0 or n == 1 :
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
+n = int(input("Enter a number of n:"))
+i = 0
+while i < n:
+    print(fib(i),end=" ")
+    i += 1
+
+# factorial using recursion:
+def fact(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return n * fact(n-1)
+n = int(input("Enter a number of n:"))
+result = n * fact(n-1)
+print(result)'''
+
+
+#--factorial using recursion:
+'''def fact(n):
+    if n < 0:
+        return "Negative numbers ka factorial nhi hota"
+    elif n == 0 or n == 1:
+        return n
+    else:
+        return n * fact(n-1)
+n = int(input("Enter a number of n : "))
+result = fact(n)
+print(result)'''
+
+
+#--fibonacci using recursion:
+'''def fib(n):
+    if n == 0 or n == 1:
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
+
+n = int(input("Enter a number of n : "))
+i = 1
+while i < n :
+    print(fib(i),end = " ")
+    i += 1
+'''
+'''
+word = "hello"
+print(len(word))
+
+word = ""
+print(len(word))
+
+word = "A\"j"
+print(len(word))
+
+word = " "
+print(len(word))
+
+word = 
+
+print(len(word))
+
+word = "Suraj\nPatidar"
+print(len(word))
+print(word)
+
+#string operation
+
+StringOne = "ONE"
+StringTwo = "TWO"
+
+print(StringOne + StringTwo)
+print(StringOne * 4)
+print(4*StringTwo)
+
+# ord function to print ascii value
+
+print(ord("a"))
+print(ord(" "))
+#print(ord(""))
+
+#chr function
+print(chr(97))
+print(chr(98))
+print(chr(ord("A")))
+
+#indexing string
+word = "My string is awesome !"
+print(word[5])
+print(word[4])
+
+for index in range(len(word)):
+    if word[index] == "a" or \
+        word[index] == "e" or\
+        word[index] == "i" or\
+        word[index] == "o" or\
+        word[index] == "u":
+        print("1",end = "")
+    else:
+        print(word[index],end = "")
+print(word)
+
+
+for char in word:
+    print("char:", char)
+'''
+
+'''alpha = "abdefg"
+print(alpha[1:3])
+print(alpha[3:])
+print(alpha[:3])
+print(alpha[3:-2])
+print(alpha[-3:4])
+print(alpha[::2])
+print(alpha[1::2])
+
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print("f" in alphabet)
+print("f"  not in alphabet)
+print("fab" in alphabet)
+
+# string m word change to space
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+alphabet = alphabet[:12] +" "+ alphabet[13:]
+print(alphabet)
+
+#other way loop
+result = ""
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+for element in alphabet:
+    if element == "m":
+        result += " "
+    else:
+        result += element
+print(result)
+
+# min()  function using string
+
+print(min("aAbByYzZ"))
+
+t = 'The knight Who Say "Ni!"'
+print('['+min(t)+']')
+
+
+#maxxx
+
+print(max("aAbByYzZ"))
+
+t = 'The knight Who Say "Ni!"'
+print('['+max(t)+']')
+
+t = [0,1,2]
+print(max(t))
+
+#method index
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print(alphabet.index("y"))
+print(alphabet.index("x"))
+print(alphabet.index("c"))
+
+#string convert to list or tuple
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print(list(alphabet))
+
+#count element in "string"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+print(alphabet.count("a"))
+
+s1 = "where are the"
+s2 = s1.split()
+print(s2[-2])
+
+
+'''
+'''string = "TO be or not to be, that is the question"
+s2 = string.split()
+print(s2)'''
+'''
+def split(string):
+    s2 = string.split()
+    print(s2)
+
+split("To be or not to be, that is the question")
+split("To be or not to be, that is the question")
+split(" ")
+split("abc")
+split("")'''
+
+'''
+def mySplit(str):
+    result = []
+    tempResult = ""
+    for index in range(len(str)):
+        if str[index] == " ":
+            result.append(tempResult)
+            tempResult = ""
+        elif index == len(str)-1:
+            result.append(tempResult+str[len(str)-1])
+            tempResult = ""
+        else:
+            tempResult += str[index]
+    return result
+
+print(mySplit("To be or not to be , that is the question"))
+print(mySplit("To be or not to be, that is the question"))
+print(mySplit)'''
 
 
 
+num_patterns = [
+     """
+###
+# #
+# #
+# #
+###""",
+    """
+  #
+  #
+  #
+  #
+  #""",
+ """
+###
+  #
+###
+#  
+###""",
+     """
+###
+  #
+###
+  #
+###""",
+"""
+# #
+# #
+###
+  #
+  #""",
+    """
+###
+#  
+###
+  #
+###""",
+   """
+###
+#  
+###
+# #
+###""",
+"""
+###
+  #
+  #
+  #
+  #""",
+"""
+###
+# #
+###
+# #
+###""",
+    """
+###
+# #
+###
+  #
+###"""
+    ]
 
+number = input("Please enter a positive number :")
 
-
+for i in number:
+    digit = int(i)
+    print(num_patterns[digit])
+    print()
 

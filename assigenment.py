@@ -26,7 +26,6 @@ the band to the list: Stu Sutcliffe, and Pete Best;
 ● step 4: use the del instruction to remove Stu Sutcliffe and Pete Best from the list;
 ● step 5: use the insert() method to add Ringo Starr to the beginning of the list.
  '''
-
 '''beatles = []
 print(beatles)
 
@@ -45,9 +44,7 @@ del beatles[3]
 print(beatles)
 
 beatles.insert(0,"Ringo Starr")
-print(beatles)
-'''
-
+print(beatles)'''
 
 
 '''Imagine you are creating a list to track the members of a fictional rock band. The band started with three members and later had some changes in the lineup.
