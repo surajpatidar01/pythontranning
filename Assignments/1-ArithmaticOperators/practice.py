@@ -4072,3 +4072,455 @@ print(mySplit("To be or not to be, that is the question"))
 print(mySplit)'''
 
 
+'''
+
+num_patterns = [
+     """
+###
+# #
+# #
+# #
+###""",
+ """
+  #
+  #
+  #
+  #
+  #""",
+ """
+###
+  #
+###
+#  
+###""",
+     """
+###
+  #
+###
+  #
+###""",
+"""
+# #
+# #
+###
+  #
+  #""",
+    """
+###
+#  
+###
+  #
+###""",
+   """
+###
+#  
+###
+# #
+###""",
+"""
+###
+  #
+  #
+  #
+  #""",
+"""
+###
+# #
+###
+# #
+###""",
+    """
+###
+# #
+###
+  #
+###"""
+    ]
+
+number = input("Please enter a positive number :")
+
+for i in number:
+    digit = int(i)
+    print(num_patterns[digit])'''
+
+
+#endswith(methuds)
+'''
+t = "Zeta"
+print(t.endswith("a"))
+print(t.endswith("A"))
+print(t.endswith("et"))
+print(t.endswith("eta"))
+
+#find()
+t = "theta"
+print(t.find("eta"))
+print(t.find("et"))
+print(t.find("the"))
+print(t.find("ha"))
+
+
+#find()
+print('kappa'.find('a',1,4))
+print('kappa'.find('a',2,4))
+
+#isalnum()  methods
+
+print('lamda30'.isalnum())
+print('lamda'.isalnum())
+print('30'.isalnum())
+print('@'.isalnum())
+print(' '.isalnum())
+print(' '.isalnum())'''
+
+'''
+#isalpha()
+
+print("mooo".isalpha())
+print("mu40".isalpha())
+
+#isdigit()
+print('2018'.isdigit())
+print('Year2019'.isdigit())
+
+#isupper()
+print("mooo".isupper())
+print('MOO'.isupper())
+
+#islower()
+print("mooo".islower())
+print('MOO'.islower())
+
+#join() methoud  --convert multi string to 1 string
+print(",".join(["omicrone","pi","rho"]))
+
+#lower()
+print("SiGmA=50".lower())
+
+#lstrip()
+str = "  abc  ".lstrip()
+print("["+str+"]")
+print("www.cisco.com".lstrip("w."))
+'''
+#replace()
+'''print("www.netacad.com".replace("netacad.com","pythoninstitute.ora)"))
+print("this is it!".replace("is","are"))
+print("apple juice".replace("juice"," "))
+print("applejuice".replace("","-"))
+
+#rfind()
+print("tau tau tau".rfind("ta"))
+print("tau tau tau".rfind("ta",9))
+print("tau tau tau".rfind("ta",3,9))
+
+#rstrip
+print("["+ "  upsilon  ".rstrip()+"]")
+print("cisco.com".rstrip(".com"))'''
+
+
+
+# comprssion string (ASCII value )
+
+'''print('10' == 10)
+print('10' != 10)
+print('10' == 1)
+print('10' != 1)
+print('10' < 10)
+print('10' > 10)'''
+
+#sorted strings
+'''my_string_list = ['omega','alpha','pi','gamma']
+my_string_list2 = sorted(my_string_list)
+print(my_string_list)
+print(my_string_list2)
+
+#--
+my_string_list = ['aaaaa','aaaa','abaa','aaaac']
+print(my_string_list)
+
+#sort(string/list)
+
+my_string_list = ['omega','alpha','pi','gamma']
+print(my_string_list)
+my_string_list.sort()
+print(my_string_list)
+
+#int convert to (string)
+number = 10
+print(type(number))
+string = str(number)
+print(string)
+print(type(string))
+
+#float cov=nert to (str)
+
+flot_num = 10.5
+print(type(flot_num))
+string = str(flot_num)
+print(string)
+print(type(string))'''
+
+
+# THe caeser cyper: encription program
+'''
+text = input("Enter your massage:")
+cipher = ' '
+for char in text:
+    if not char.isalpha():
+        continue
+    char = char.upper()
+    code = ord(char)+1
+    if code > ord('Z'):
+        code  = ord('A')
+    cipher += chr(code)
+
+print(cipher)'''
+
+#decrypting a massage
+'''cipher = input("Enter your massage:")
+text = ''
+for char in cipher:
+    if not char.isalpha():
+        continue
+    char  =  char.upper()
+    code = ord(char)-1
+    if code < ord('A'):
+        code = ord('Z')
+    text += chr(code)
+print(text)'''
+
+# THE NUMBER PROSESOR
+'''line = input("Enter a line of numbers- separate them with spaces: ")
+string = line.split()
+total = 0
+
+try:
+    for substr in string:
+        total += float(substr)
+    print("The total is ",total)
+except:
+    print("substr,is not a number")'''
+
+#exeptions
+'''try:
+    y = 1 / 0
+except ZeroDivisionError:
+    print("Zero divisible!")
+except ArithmeticError:
+    print("Arithmetic problem!")
+
+print("THE END")'''
+
+
+
+'''try:
+    y = 1 / 0
+
+except ZeroDivisionError:
+    print("Zero divisible!")
+
+except ArithmeticError:
+    print("Arithmetic problem!")
+
+print("THE END")'''
+
+
+#--
+'''def bad_fun(n):
+    try:
+        return 1/ n
+    except ArithmeticError:
+        print("Arithmetic problem !")
+        return None
+
+bad_fun(0)
+print("THE END.")'''
+
+'''def bad_fun(n):
+        return 1/n
+    try:
+        bad_fun(0)
+    except ArithmeticError:
+        print("What happend? An exception was raised")
+
+
+print("THE END.")
+'''
+
+#--raise Exeption:
+'''def bad_fun(n):
+    if n == 0:
+        print("Now i am going to raise an expetion manually")
+        raise ZeroDivisionError
+    return 1 / n
+
+
+try:
+    bad_fun(0)
+except ArithmeticError:
+    print("What happend? An exception was raised")
+
+print("THE END.")'''
+
+
+
+
+
+'''def bad_fun(n):
+    if n == 0:
+        print("Now i am going to raise an expetion manually")
+        raise
+    return 1 / n
+
+
+try:
+    bad_fun(0)
+except ArithmeticError:
+    print("What happend? An exception was raised")
+except Exception:
+    print("Exception problem!")
+print("THE END.")'''
+
+
+#assert--
+'''
+import math
+x = float(input("Enter the value:"))
+assert x >= 0.0
+
+x = math.sqrt(x)
+print(x)'''
+
+# assertion error
+"""from math import tan,radians
+angel = int(input("Enter integral angel in degrees: "))
+
+assert angel % 180 != 90
+print(tan(radians(angle)))"""#----------------------------------------------------
+
+#----
+'''the_list = [1,2,3,4,5]
+ix = 0
+do_it = True
+
+while do_it:
+    try:
+        print(the_list[ix])
+        ix += 1
+    except IndexError:
+        do_it = False
+print("Done")'''
+
+
+#KeybordIntrupt ERROR
+
+'''from time import sleep
+seconds = 0
+while True:
+    try:
+        print(seconds)
+        seconds += 1
+        sleep(1)
+    except KeyboardInterrupt:
+        print("Don't do that!")'''
+
+
+#--OverflowError
+
+'''from math import exp
+ex = 1
+try:
+    while True:
+        print(exp(ex))
+        ex *= 2
+except OverflowError:
+    print("The number is too big")'''
+
+
+
+
+
+
+#object oriented
+
+'''class MyClass:
+    pass
+
+my_class_object = MyClass()
+print(my_class_object)
+print(type(my_class_object))'''
+
+'''stack = []
+def push(val):
+    stack.append(val)
+    print(stack)
+
+def pop():
+    val = stack[-1]
+    del stack[-1]
+    return val
+
+push(3)
+push(2)
+push(1)
+print(pop())
+print(stack)
+print(pop())
+print(stack)
+print(pop())
+print(stack)
+
+'''
+
+'''class Stack:
+    def __init__(self):
+        print("Constructer running!")
+        self.__stack = []
+
+stack_object = Stack()
+print(stack_object.stack)
+print(len(stack_object.stack))
+print(type(stack_object.stack))
+'''
+
+
+#stack--
+class Stack:
+    def __init__(self):
+        print("constructer Running!!")
+        self.__stack = []
+
+    def push(self,val):
+        self.__stack.append(val)
+        print(self.__stack)
+
+    def  pop(self):
+        val = self.__stack[-1]
+        del self.__stack[-1]
+        return val
+
+    def traverse(self):
+        print(self.__stack)
+
+stack_object = Stack()
+print(stack_object)
+stack_object.push(1)
+stack_object.push(2)
+stack_object.push(3)
+stack_object.push(4)
+stack_object.push(5)
+stack_object.push(6)
+stack_object.push(7)
+stack_object.pop()
+stack_object.traverse()
+stack_object.pop()
+stack_object.traverse()
+stack_object.pop()
+stack_object.traverse()
+stack_object.pop()
+stack_object.traverse()
+stack_object.pop()
+stack_object.traverse()
+
+
+
