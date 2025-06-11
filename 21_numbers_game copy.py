@@ -48,10 +48,9 @@ while True:
             if current_number == 21:
                 print("Computer said 21. You win!")
 
+
+
     replay = input("\nDo you want to play again? (yes/no): ").strip().lower()
     if replay != "yes":
-       print("Thanks for playing ")
-       break
-       
-
-
+        print("Thanks for playing!")
+        break

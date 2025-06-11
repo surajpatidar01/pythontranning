@@ -4485,7 +4485,7 @@ print(type(stack_object.stack))
 
 
 #stack--
-class Stack:
+'''class Stack:
     def __init__(self):
         print("constructer Running!!")
         self.__stack = []
@@ -4521,6 +4521,100 @@ stack_object.pop()
 stack_object.traverse()
 stack_object.pop()
 stack_object.traverse()
+'''
+
+
+#assignment--
+#reverse a string without using slice
+#hello
+'''def reverse_string(s):
+    result = ""
+    for i in s:
+        result = i + result
+    return result
+
+print(reverse_string("hello"))'''
+
+
+#swpping list elements:(swap index 1 to index 3)
+
+# list = [10,30,90,40,20,]
+#
+# temp = list[1]
+#
+# list[1] = list[3]
+# list[3] = temp
+# print(list)
+
+
+#
+# dict ={
+#     'a':12,
+#     'b':10,
+#     'c':5
+# }
+# print(sum(dict.values()))
+
+
+#factorial using recursion
+# def fact(n):
+#     if n == 1 :
+#         return 1
+#     else:
+#         result = n * fact(n-1)
+#         return result
+#
+# print(fact(5))
+
+
+
+
+# #fibonacci using recursion
+# def fib(n):
+#     if n <= 0 :
+#         return 0
+#     elif n == 1:
+#         return 1
+#     else:
+#         result = fib(n - 1) + fib(n - 2)
+#         return result
+#
+#
+# print(fib(n))
+
+
+# pre define module:
+
+# import calendar
+# print(calendar.month(2080,7))
+
+# import keyword
+# print(keyword.kwlist)
+
+
+# user difine module
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
