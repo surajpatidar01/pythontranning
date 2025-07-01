@@ -21,7 +21,7 @@ while True:
                 break
             else:
                 print("invalid input!,please enter 1 or 2")
-
+ 
 
     current_number = 0
 
@@ -52,6 +52,6 @@ while True:
     if replay != "yes":
        print("Thanks for playing ")
        break
-       
+
 
 

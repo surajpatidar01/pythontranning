@@ -4480,8 +4480,8 @@ print(stack)
 stack_object = Stack()
 print(stack_object.stack)
 print(len(stack_object.stack))
-print(type(stack_object.stack))
-'''
+print(type(stack_object.stack))'''
+
 
 
 #stack--
@@ -4593,6 +4593,468 @@ print(reverse_string("hello"))'''
 
 
 # user difine module
+
+
+
+#f"string"
+
+# latter = "hello my name is suraj and i am from country"
+# name = "suraj patidar"
+# country = "india"
+#
+# print(f"hello my name is {{name}} and i am from {{country}}")
+# print(f"hello my name is {name} and i am from {country}")
+
+
+
+
+
+
+'''list = [1,2,3,4,5]
+sum = 0
+for i in list:
+    sum += i
+print(sum)'''
+
+
+
+#-Write a Python function that takes two lists and returns True if they have at least one common member.
+
+
+'''def common_member(list1,list2):
+    for item in list1:
+        if item in list2:
+            return True
+
+    return False
+
+print(common_member(list1 = ["suraj","mayank","aabid"],list2 =["suraj","mayank","aabid"] ))'''
+
+
+
+
+#--Write a Python program to get the smallest number from a list
+
+# list = [1,4,2,3,6,1,2,3,1,3,4,2]
+#
+# smallest_number = list[0]
+#
+# for i in list:
+#     if i <= smallest_number:
+#         smallest_number = i
+#
+# print(smallest_number)
+
+
+
+# fibonacci using reccursion
+'''
+def fib(n):
+    if n == 0 :
+        return 1
+
+    elif n == 1:
+
+        return 1
+    else:
+        total= fib(n-1)+fib(n-2)
+        return total
+
+n = int(input("Enter a number of n:"))
+print("Fibonacci series")
+
+for i in range(n):
+    print(fib(i),end = " ")'''
+
+
+
+#factorial using recursion
+
+# def fact(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#          return n * fact(n-1)
+# n = int(input("Enter a number of n:"))
+# print(fact(n))
+
+# #oop(Class)
+#
+# class Faculty:
+#     def put_data(self):
+#         self.id = int(input("Enter faculty id:"))
+#         self.name = input("Enter faculty name:")
+#         self.salary = float(input("Enter faculty salary"))
+#     def display(self):
+#         print("faculty id",self.id)
+#         print("faculty name",self.name)
+#         print(" faculty salary",self.salary)
+#
+# a = Faculty()
+# a.put_data()
+# a.display()
+
+
+#--Remove Even Numbers from List | List: [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
+# List = [6, 2, 7, 1, 3, 2, 7, 9, 0, 4, 5, 1, 6, 7]
+#
+# new_list = []
+#
+# for i in List:
+#
+#     if i % 2 == 1:
+#
+#         new_list.append(i)
+#
+# print(new_list)
+
+
+#-Write a Pvthon program to generate and print a list of the first 5 and last 5
+# elements where the values are sauare numbers between 1 and 30(both included).
+#
+# square = []
+#
+# for i in range(1,31):
+#     square.append(i*i)
+#
+# result = square[:5]+square[-5:]
+#
+# print(result)
+
+
+#--Check If All Numbers Are Prime | Lists: [0, 3, 4, 7, 91, [3, 5, 7, 131, [1, 5, 31
+
+'''list = [0, 3, 4, 7, 91, [3, 5, 7, 131, [1, 5, 3]]]
+
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+List = [0, 3, 4, 7, 9]
+
+all_prime = all(is_prime(i) for i in List)
+
+print("All numbers are prime?" , all_prime)'''
+
+#--count positive number in a list.
+
+'''list = [1,-2,3,-4,5,6,-7,-8,9,10]
+
+positive_list = []
+
+for i in list:
+    if i >= 1:
+        positive_list.append(i)
+print(positive_list)
+print(len(positive_list))'''
+
+
+#--sum of even number (n):
+
+'''n = int(input("Enter a number n:"))
+sum = 0
+for i in range(n):
+    if i % 2 == 0:
+        sum += i
+
+print(sum)
+'''
+
+
+#--multiplication table print 10\using continue stetement
+'''n = 1
+
+for i in range(1,11):
+    if i == 5:
+        continue
+    result = n * i
+    print(f"{n}x{i}= {result}")
+'''
+
+# using dual loop
+'''n = 2
+
+for i in range(1,5):
+
+    result = n * i
+    print(f"{n}x{i}= {result}")
+
+for i in range(5,11):
+    result = n * i
+    print(f"{n}x{i}= {result}")'''
+
+#Reverse a string using loop:
+
+# my_string = "Suraj"
+# reverse_string = ""
+#
+# for i in my_string :
+#     reverse_string = i + reverse_string
+#
+#
+#
+# print(reverse_string)
+
+
+#-find the first non reapetad character:
+'''
+string = "teeter"
+
+for i in string:
+
+    if string.count(i) == 1:
+        print("char is:", i)
+        break'''
+
+
+#factorial  using while loop:
+
+# num = 5
+# fact = 1
+#
+# while num > 0 :
+#
+#     fact *= num
+#     num -= 1
+# print(fact)
+
+
+#-valid loop (keep asking the user input until they enter number between 1 to 10:
+'''
+while True:
+    num = int(input("Enter value below 1/10 mid::"))
+
+    if 1 >= num <=10:
+        print("Thanks ")
+
+        break
+
+    else:
+        print("Invalid number please try again --")'''
+
+
+#--prime number cheaker
+'''
+num = int(input("enter n:"))
+
+is_prime = True
+
+if num > 1:
+    for i in range(2,num):
+        if (num % i) == 0:
+            is_prime = False
+            break'''
+
+
+#
+# str = "teeter"
+#
+# for i in str:
+#     if str.count(i)==1:
+#         print(i)
+
+    
+#--age group categorization:
+# age = int(input("Enter age:"))
+#
+# if age < 13:
+#     print("Child")
+#
+# elif 13<= age and age < 19:
+#     print("Teenager")
+#
+# elif 20 <= age and age < 59:
+#     print("Adult")
+#
+# else:
+#     print("senior")
+
+
+#--movi ticket pricing:
+# age = int(input("Enter age:"))
+# day = "wednesday"
+# price = 12
+# price = 12 if age >=18 else 8
+#
+# if day == "wednesday":
+#     price = price - 2
+#     print(price)
+
+#-grade calculator:
+# score  = int(input("Enter score:"))
+#
+# if score >= 101:
+#     print("Please enter valid score:")
+#     exit()
+#
+# if score >= 90:
+#     grade = "A"
+# elif score >= 80:
+#     grade = "B"
+# elif score >=70:
+#     grade = "C"
+# elif score >= 60:
+#     grade = "D"
+#
+# else:
+#     grade = "F"
+# print("grade",grade)
+
+
+#--Fruit ripeness checker:
+
+# fruit = "Banana"
+# colour ="Green"
+#
+# if fruit == "Banana":
+#     if colour == "Green":
+#
+#         print("Unripe")
+#
+#     elif colour == "Yellow":
+#         print("Ripe")
+#
+#     elif colour == "Brown":
+#         print("OverRipe")
+#
+# else:
+#     print("Not in my fruit list")
+
+
+
+ #---Weather activity suggestion:
+# weather = "snowy"
+#
+#
+# if weather == "Sunny":
+#     print("Go for a walk")
+#
+# elif weather == "Rainy":
+#     print("read a book")
+#
+# elif weather == "snowy":
+#     print("Build a snow man")
+
+
+#--Transportation Mode selection:
+
+# distance = int(input("Enter distance:"))
+#
+# if distance  < 3:
+#     print("walk")
+# elif 3 < distance <15:
+#     print("bike")
+#
+# else:
+#     print("car")
+
+
+#--Coffe customization:
+#
+# order_size = "Medium"
+# extra_shot = True
+#
+# if extra_shot:
+#     coffe  = order_size + "Coff with an extra shot  "
+#
+# else:
+#     coffe = order_size + "coffe"
+#
+#
+# print("order:",coffe)
+
+
+#function--
+
+#--Besic function syntax:(write a function to calculate Square of a number:
+
+# def square_of_num(num):
+#     return num ** 2
+#
+# n = int(input("Enter n num:"))
+# result = n ** 2
+# print(result)
+
+
+#--Function with multiple parameter:(Create a function that takes two number as parameter and returnn sum:
+
+# def sum_of_two_num(n1,n2):
+#     return n1 + n2
+#
+# n1 = int(input("Enter n1:"))
+# n2 = int(input("Enter n2:"))
+# print(sum_of_two_num(n1,n2))
+
+
+#-Polymorphism in function:(Write a function multiply that multiplies two number, but can also accept and multiply string:
+
+# def multiply(p1,p2):
+#      return p1 * p2
+#
+# print(multiply(5,5))
+# print(multiply("suraj",5))
+
+
+#--Function returning Multiple Values:(Create a function that return both the are and Circumference of a circle given its radius:
+
+# import math
+#
+# def circle_states(radius):
+#     area =  math.pi * radius ** 2
+#     circumference = 2 * math.pi ** radius
+#     return area, circumference
+#
+#
+# a,b = circle_states(4)
+# a = round(a,2)   # round use for decimal value less:
+# b = round(b,2)     # round use for decimal value less:
+# print("Area:", a , "circumference", b)
+
+
+#--Default parameter value:(Write a function that greet the user . if no name is provide, it should greet with a default name:)
+
+# def greet(name = "suraj"):
+#     return "hello, " +name+ " !"
+#
+#
+# print(greet("python"))
+# print(greet())
+
+
+
+#-- Lamda Function:(Create a Lamda function to compute the cube of a number:
+
+# cube = lambda x: x ** 3
+# print(cube(3))
+
+
+
+#--Function with *args:(write a function that takes variable numbers of argument and return their sum:
+
+# def total(*args):
+#      return sum(args)
+#
+# print(total(1,2,3))
+# print(total(1,2,3,4,5,6,7))
+# print(total(1,2,3,4,32,24,3,2,3,))
+
+
+#--Function with **Kwargs:(Crate a function that accept any number of keyword arguments and print them in the formate key value):
+
+
+
+
+
+
+
+
+
+
+
 
 
 
