@@ -5049,6 +5049,28 @@ if num > 1:
 
 
 
+#--Generator function with yield:(Write a Generator function that yield even numbers up to a specified limit):
+
+# def even_generator(limit):
+#     for i in range(2,limit+1,2):
+#         yield i    # return or print ki jgh yield keyword ka use hua
+#
+# for num in even_generator(10):
+#     print(num)
+
+
+#--Recursive Function:(Create a recursive function to calculate the factorial of a number:
+
+# def fact(n):
+#     if n == 1 or n == 0 :
+#         return 1
+#     else:
+#         return n * fact(n-1)
+#
+# print(fact(5))
+
+
+
 
 
 
