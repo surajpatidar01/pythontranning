@@ -5049,6 +5049,7 @@ if num > 1:
 
 
 
+
 #--Generator function with yield:(Write a Generator function that yield even numbers up to a specified limit):
 
 # def even_generator(limit):
@@ -5068,6 +5069,55 @@ if num > 1:
 #         return n * fact(n-1)
 #
 # print(fact(5))
+
+
+
+
+#-write  a program using recursion print number   n to 1:
+
+# def n_to_1(n):
+#     if n == 0 :
+#         return
+#     print(n)
+#     #recursive cace
+#     print(n_to_1(n-1))
+#
+# print(n_to_1(5))
+
+
+
+
+# Write a program to print sum to 1 to n : (using recursion):
+#
+# def sum_1_to_n(n):
+#     if n ==1:
+#         return 1
+#
+#     else:
+#         result = n + sum_1_to_n(n-1)
+#         return result
+#
+# print(sum_1_to_n(5))
+
+
+#--write a python function that checks if the given string is a palindrome or not :
+
+'''def check_palindrome(str):
+
+    clean_str =  str.replace(" ","").lower()
+
+    reverse_str = clean_str[::-1]
+
+    return clean_str == reverse_str
+
+str = input("Enter string:")
+
+if check_palindrome(str):
+    print("its a palindrome string:")
+else:
+    print("not a palindrome string")'''
+
+
 
 
 
